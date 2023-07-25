@@ -1,0 +1,43 @@
+$icon-size: 80px;
+
+.numeros {
+  position: relative;
+  padding: 4rem 0;
+  margin-bottom: 10px;
+  background: rgba(8, 48, 80, 0.1);
+  background-image: url("/assets/img/pattern-nova.png");
+  background-repeat: repeat;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(8, 48, 80, 0.2);
+  }
+
+  .container {
+    .numero {
+      padding: 1rem 3rem;
+      text-align: center;
+      .icon img {
+        height: $icon-size;
+        width: $icon-size;
+        object-fit: contain;
+      }
+      .value {
+        font-size: 3rem;
+        color: var(--bs-primary);
+        font-weight: 500;
+        margin: 1rem 0 2rem;
+      }
+      .caption {
+        font-size: 1.2rem;
+        color: var(--bs-dark);
+        font-weight: 700;
+      }
+    }
+  }
+}

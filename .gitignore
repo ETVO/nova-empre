@@ -1,0 +1,5 @@
+/node_modules/
+/assets/*
+!/assets/img
+package-lock.json
+.vscode

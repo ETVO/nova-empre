@@ -1,0 +1,40 @@
+@import "./partials/header";
+@import "./partials/footer";
+@import "./home";
+
+// *::selection {
+//     background-color: rgba(mix(#2da29a, #00887f, 10%), .75);
+//     color: white;
+// }
+
+a:not(.btn) {
+    transition: all 0.2s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+
+    &.default {
+        @media all and (min-width: 1200px) {
+            max-width: 1000px;
+        }
+        @media all and (min-width: 1400px) {
+            max-width: 1220px;
+        }
+    }
+}
+
+.btn.btn-light {
+    color: var(--bs-primary) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5;
+}

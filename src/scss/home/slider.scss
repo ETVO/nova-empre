@@ -1,0 +1,174 @@
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider {
+  padding: 4rem 0;
+  background-color: #031d33;
+  .multi-carousel {
+    position: relative;
+    padding: 0 5rem;
+
+    &-inner {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      // background-color: rgba(red, .25);
+      
+      .multi-carousel-item {
+        flex: 1;
+        position: relative;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity .2s;
+
+        &:not(.active) {
+          opacity: 0;
+          display: none;
+        }
+
+        &.transitioning {
+          position: absolute;
+          display: block;
+        }
+
+        & > img {
+          display: block;
+          width: 100%;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: 0;
+          background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 20.78%, rgba(0, 0, 0, 0) 50.45%), rgba(0, 0, 0, 0.1);
+          transition: background 0.2s;
+        }
+
+        .overlay {
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          padding: 1.5rem;
+          display: flex;
+          flex-flow: column;
+          
+          
+          transform: translateY(4rem);
+          
+          .local,
+          .btn {
+            opacity: 0;
+            transition: opacity 0.2s;
+          }
+
+          transition: transform 0.2s;
+
+          img {
+            width: calc(100% - 2rem);
+            margin: auto;
+          }
+
+          .local {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 0.5rem 0 1.5rem;
+
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 1;
+
+            span {
+              margin-right: 0.5rem;
+            }
+          }
+
+          .btn {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            width: 100%;
+          }
+        }
+
+        &:hover {
+          &::after {
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 54.29%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.2);
+          }
+
+          .overlay {
+            transform: translateY(0);
+
+            .local,
+            .btn {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    &-control {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      background: none;
+      border: none;
+
+      &.prev {
+        left: 1rem;
+      }
+      &.next {
+        right: 1rem;
+      }
+
+      [class^="bi"] {
+        margin: auto;
+        display: block;
+        padding: 1rem;
+        box-sizing: content-box;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+      }
+    }
+    &-indicators {
+      position: absolute;
+      bottom: -3rem; left: 0; right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      @media all and (max-width: 1200px) {
+        display: none;
+      }
+
+      button {
+        height: 10px;
+        width: 140px;
+        border: none;
+        background: white;
+        opacity: .6;
+        transition: opacity .2s;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

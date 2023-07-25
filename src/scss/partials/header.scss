@@ -1,0 +1,65 @@
+header {
+    .header-top {
+        padding: 1rem 0;
+        background: linear-gradient(90deg, #083050 0%, #03618c 100%);
+        color: white;
+        .logo {
+            img {
+                width: 135px;
+            }
+        }
+        .contatos {
+            display: flex;
+            gap: 2rem;
+            margin-left: auto;
+
+            .contato {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                color: inherit;
+                text-decoration: none;
+
+                .icon {
+                    font-size: 1.85rem;
+                }
+                div {
+                    .caption {
+                        font-size: 0.85em;
+                    }
+                    .value {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        padding: 1rem 0;
+        .navbar-nav {
+            @media all and (min-width: 992px) {
+                .nav-item {
+                    padding: 0 2rem;
+                    border-right: solid 1px #e6e7e8;
+                    margin: auto 0;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                    
+                    .nav-link {
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding: 0;
+                        color: var(--bs-primary);
+
+                        img {
+                            height: 1.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

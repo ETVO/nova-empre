@@ -1,0 +1,121 @@
+$control-icon-size: 3rem;
+
+.hero-cta {
+    .carousel {
+        .carousel-item {
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+            .content-wrap {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                .content {
+                    margin: auto;
+                    padding: 2rem;
+                    background-color: rgba(#000, 0.6);
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+
+                    width: 500px;
+                    max-width: 100%;
+
+                    .title {
+                        color: inherit;
+                        font-size: calc(1.375rem + 1.5vw);
+                        font-weight: 500;
+                        letter-spacing: 10.4px;
+                        margin-bottom: 2rem;
+                    }
+
+                    .local {
+                        color: inherit;
+                        font-family: Montserrat;
+                        font-size: calc(0.9rem + 0.4vw);
+                        font-weight: 500;
+                        line-height: 150%;
+                        letter-spacing: 7.2px;
+                        margin-bottom: 3rem;
+                    }
+
+                    .action {
+                        .btn {
+                            padding: 0.75rem 3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-control {
+            &-prev {
+                &:hover,
+                &:focus,
+                &:active {
+                    background: linear-gradient(90deg, rgba(#000, 0.25), rgba(#000, 0));
+                }
+
+                &-icon::before {
+                    content: "\f284";
+                }
+            }
+            &-next {
+                &:hover,
+                &:focus,
+                &:active {
+                    background: linear-gradient(-90deg, rgba(#000, 0.25), rgba(#000, 0));
+                }
+
+                &-icon::before {
+                    content: "\f285";
+                }
+            }
+            &-prev,
+            &-next {
+                width: auto;
+                opacity: 1;
+                background: none;
+                transition: all 0.2s;
+
+                &-icon {
+                    display: flex;
+                    font-family: bootstrap-icons;
+                    font-weight: bolder;
+                    font-size: calc($control-icon-size / 2);
+
+                    width: $control-icon-size;
+                    height: $control-icon-size;
+
+                    background-image: none;
+
+                    background-color: #fff;
+                    color: var(--bs-primary);
+                    // transition: background-color 0.1s ease;
+                    opacity: 1;
+
+                    &::before {
+                        margin: auto;
+                    }
+                }
+
+                &:active {
+                    opacity: .8;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            button {
+                height: 10px;
+                width: 140px;
+                margin: 0 7.5px;
+            }
+        }
+    }
+}

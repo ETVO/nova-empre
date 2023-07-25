@@ -1,0 +1,37 @@
+.video-dep {
+  .media {
+    padding-left: 0;
+    iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .depoimentos {
+    width: 550px;
+    max-width: 100%;
+    margin: auto;
+    padding: 1.1rem 0;
+    .depoimento-item {
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+      border-bottom: solid 1px #E6E7E8;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      p.depoimento {
+        font-weight: 500;
+      }
+      p.nome {
+        font-style: italic;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: #A7A9AC;
+      }
+    }
+  }
+}
