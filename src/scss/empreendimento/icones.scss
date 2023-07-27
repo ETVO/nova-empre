@@ -1,0 +1,20 @@
+.icones {
+  padding: 3.125rem 0 4.5rem;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // width: 900px;
+    // max-width: 100%;
+    gap: 7.5rem;
+
+    .icon {
+      display: flex;flex-flow: column;
+      text-align: center;
+      font-size: .875rem;
+      font-weight: 500;
+      gap: .6rem;
+    }
+  }
+}

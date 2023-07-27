@@ -1,0 +1,31 @@
+.foto-texto {
+  position: relative;
+  padding: 6.5rem 0;
+  background-color: #2e3239;
+
+  .container {
+    // @media all and (min-width: 1200px) {
+    //   max-width: 1000px;
+    // }
+    @media all and (min-width: 1400px) {
+      max-width: 1000px !important;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      color: white;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-left: calc(50% + 7rem);
+      margin-bottom: 0;
+    }
+  }
+}

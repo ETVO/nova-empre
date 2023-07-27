@@ -73,14 +73,12 @@
 
       if (direction == 'prev') {
         if (!$inner.find('.multi-carousel-item.active').first().prev().length) {
-          console.log('no prev');
           return;
         }
         carouselIndex--;
       }
       else {
         if (!$inner.find('.multi-carousel-item.active').last().next().length) {
-          console.log('no next');
           return;
         }
         carouselIndex++;
@@ -158,7 +156,6 @@
       );
       setTimeout(() => {
         $inner.find('.multi-carousel-item').each(function (i) {
-          console.log(i)
           if (i < slideTo) {
             $(this).removeClass('active')
           }

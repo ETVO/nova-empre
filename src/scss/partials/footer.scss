@@ -1,3 +1,106 @@
 footer {
-  height: 100px;
+  position: relative;
+  background-color: var(--bs-primary);
+  padding: 4rem 0 2.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: .6;
+
+    background-image: url("/assets/img/pattern-nova-branco.svg");
+    background-size: 210px;
+    background-repeat: repeat;
+  }
+
+  > .container {
+    color: white;
+
+    h5,
+    a {
+      color: inherit;
+    }
+
+    .info {
+      display: flex;
+      margin-bottom: 4rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h5 {
+        margin-bottom: .75rem;
+        font-size: 1.25rem;
+      }
+
+      .contacts {
+        margin-right: 3rem;
+        padding-right: 3rem;
+        border-right: solid 1px rgba(#fff, 0.2);
+
+        .contact {
+          margin-bottom: 0.5rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .local {
+        p {
+          margin-bottom: 0.25rem;
+        }
+      }
+
+      .social {
+        margin-left: auto;
+        a {
+          font-size: 2rem;
+          margin-right: 2.8rem;
+        }
+      }
+
+      .logo {
+        // margin: auto 0;
+        align-self: center;
+        margin-right: 5.25rem;
+        img {
+          width: 115px;
+        }
+      }
+      .app {
+        align-self: center;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+
+        span {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  background: #031D33;
+  color: white;
+  padding: 2.4rem 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: .75rem;
+  line-height: 2;
+  text-align: center;
+
+  a{
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+  }
 }

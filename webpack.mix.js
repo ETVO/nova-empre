@@ -16,3 +16,9 @@ mix
 
 // Copy bootstrap-icons module
 mix.copy('node_modules/bootstrap-icons/font/', 'assets/fonts/bootstrap-icons');
+
+// mix.webpackConfig({
+//   stats: {
+//       children: true,
+//   },
+// });
