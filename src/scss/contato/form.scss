@@ -1,0 +1,84 @@
+.form-contato {
+  padding: 7.5rem 0;
+  position: relative;
+  background: var(--cinza-escuro);
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+
+    background-image: url("/assets/img/pattern-nova-branco.svg");
+    background-size: 210px;
+    background-repeat: repeat;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+
+    .wrapper {
+      background-color: white;
+      width: 768px;
+      max-width: 100%;
+      margin: auto;
+      padding: 3.125rem;
+
+      .form-heading {
+        h2 {
+          color: #000;
+          font-size: 1.75rem;
+          font-weight: 700;
+          line-height: 120%; /* 33.6px */
+          letter-spacing: -0.84px;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      form {
+        .field {
+          margin-bottom: 1.5rem;
+          .radio-boxes {
+            display: flex;
+            gap: 0.625rem;
+
+            .radio-label {
+              cursor: pointer;
+              input[type="radio"] {
+                display: none;
+                
+                &:checked + .radio-text {
+                  background: var(--bs-primary);
+                  color: white;
+                }
+              }
+              
+              .radio-text {
+                display: block;
+                background: var(--cinza-claro);
+                color: var(--cinza);
+                padding: 0.9rem 1.25rem;
+                text-align: right;
+                font-size: 1.125rem;
+                font-weight: 600;
+                letter-spacing: 0.1125rem;
+                text-transform: uppercase;
+
+                transition: background .2s;
+
+                &:hover {
+                  background: var(--cinza);
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,11 +2,24 @@
 @import "./partials/footer";
 @import "./home";
 @import "./empreendimento";
+@import "./a-nova";
+@import "./contato";
 
 // *::selection {
 //     background-color: rgba(mix(#2da29a, #00887f, 10%), .75);
 //     color: white;
 // }
+
+:root {
+    --cinza-claro: #e6e7e8;
+    --cinza-escuro: #2e3239;
+    --gradiente-azul-verde: linear-gradient(90deg, #083050 0%, #0080b2 100%);
+    --cinza: #A7A9AC;
+}
+
+a {
+    color: var(--bs-primary);
+}
 
 a:not(.btn) {
     transition: all 0.2s;
@@ -28,6 +41,15 @@ a:not(.btn) {
             max-width: 1220px;
         }
     }
+
+    &.smaller {
+        @media all and (min-width: 1200px) {
+            max-width: 768px;
+        }
+        @media all and (min-width: 1400px) {
+            max-width: 992px;
+        }
+    }
 }
 
 .btn.btn-light {
@@ -38,4 +60,51 @@ a:not(.btn) {
 
 p {
     line-height: 1.5;
+}
+
+h2.block-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: var(--bs-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+form {
+    .field {
+        margin-bottom: 0.9rem;
+    }
+    label {
+        font-weight: 500;
+    }
+    .form-control,
+    .form-select {
+        padding: 0.9rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border: none;
+        background: rgba(209, 208, 207, 0.3);
+        &::placeholder {
+            color: rgba(#000, 0.3);
+        }
+        &.form-select {
+            color: rgba(#000, 0.3);
+            &.valid-value {
+                color: unset;
+            }
+        }
+    }
+    .btn {
+        margin-top: 0.9rem;
+        margin-left: auto;
+        padding: 0.625rem 1.875rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
 }

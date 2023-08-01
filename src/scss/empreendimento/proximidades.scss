@@ -1,0 +1,43 @@
+.proximidades {
+  padding: 4.38rem 0 7.5rem;
+
+  .row {
+    .local {
+      padding: 1.25rem;
+      border: 2px solid var(--cinza-escuro);
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      
+      height: 100%;
+      
+      @media all and (max-width: 992px) {
+        justify-content: space-between;
+        text-align: right;
+        @media all and (min-width: 576px) {
+          justify-content: flex-end;
+          flex-flow: column;
+          text-align: center;
+        }
+      }
+
+      .icon {
+        font-size: 1.2rem;
+      }
+
+      .text {
+        b {
+          display: block;
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin-bottom: 0.25rem;
+        }
+        small {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

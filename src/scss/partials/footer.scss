@@ -3,14 +3,19 @@ footer {
   background-color: var(--bs-primary);
   padding: 4rem 0 2.5rem;
 
+  a {
+    text-decoration: none;
+  }
+
   &::before {
     content: "";
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
 
-    opacity: .6;
+    opacity: 0.05;
 
     background-image: url("/assets/img/pattern-nova-branco.svg");
     background-size: 210px;
@@ -19,6 +24,8 @@ footer {
 
   > .container {
     color: white;
+    position: relative;
+    z-index: 1;
 
     h5,
     a {
@@ -34,7 +41,7 @@ footer {
       }
 
       h5 {
-        margin-bottom: .75rem;
+        margin-bottom: 0.75rem;
         font-size: 1.25rem;
       }
 
@@ -44,6 +51,7 @@ footer {
         border-right: solid 1px rgba(#fff, 0.2);
 
         .contact {
+          display: block;
           margin-bottom: 0.5rem;
 
           &:last-child {
@@ -81,7 +89,7 @@ footer {
         align-items: center;
 
         span {
-          margin-right: .5rem;
+          margin-right: 0.5rem;
         }
       }
     }
@@ -89,18 +97,21 @@ footer {
 }
 
 .bottom {
-  background: #031D33;
+  background: #031d33;
   color: white;
   padding: 2.4rem 0;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 2;
   text-align: center;
 
-  a{
-    font-weight: 800;
+  a {
     color: white;
     text-decoration: none;
+
+    &.highlight {
+      font-weight: 800;
+    }
   }
 }

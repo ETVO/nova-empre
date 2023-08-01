@@ -55,23 +55,22 @@ $control-icon-size: 3rem;
         }
         .carousel-control {
             &-prev {
-                &:hover,
-                &:focus,
-                &:active {
+                &:hover {
                     background: linear-gradient(90deg, rgba(#000, 0.25), rgba(#000, 0));
                 }
-
+                padding-right: 5rem;
+                
                 &-icon::before {
                     content: "\f284";
                 }
             }
             &-next {
-                &:hover,
-                &:focus,
-                &:active {
+                &:hover {
                     background: linear-gradient(-90deg, rgba(#000, 0.25), rgba(#000, 0));
                 }
 
+                padding-left: 5rem;
+                
                 &-icon::before {
                     content: "\f285";
                 }

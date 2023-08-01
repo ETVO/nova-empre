@@ -1,0 +1,87 @@
+.foto-conteudo {
+  position: relative;
+  padding: 7.25rem 0;
+  margin-bottom: 3rem;
+
+  &.content-right {
+    background: #b5c1cb;
+    
+    &::before {
+      opacity: .2;
+    }
+    .container {
+      img {
+        left: 0;
+      }
+
+      .content {
+        padding-right: 0;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &.content-left {
+    background: var(--cinza-escuro);
+    color: white;
+
+    &::before {
+      opacity: .05;
+    }
+    .container {
+      img {
+        right: 0;
+      }
+
+      .content {
+        padding-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/assets/img/pattern-nova-branco.svg");
+    background-size: 210px;
+    background-repeat: repeat;
+  }
+
+  .container {
+    img {
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 50%;
+      text-align: left;
+      padding: 0 7rem;
+
+      h2 {
+        color: inherit;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        font-size: 1.375rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+.caracter-main {
+  padding: 4.375rem 0 6.25rem;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .caracter {
+      width: 50%;
+      display: flex;
+      align-self: center;
+      align-items: center;
+      padding: 1.5rem;
+      gap: 1.5rem;
+      // border: solid 1px #ccc;
+
+      &:nth-child(n) {
+        padding-left: 0;
+      }
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+      img {
+        width: 6.5rem;
+        height: 6.5rem;
+        object-fit: contain;
+      }
+      .desc {
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 1.92px;
+        text-transform: uppercase;
+        color: var(--bs-primary);
+        margin-bottom: 0;
+        span {
+          font-size: 2rem;
+          display: block;
+        }
+        small {
+          line-height: 1.5;
+          text-transform: none;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

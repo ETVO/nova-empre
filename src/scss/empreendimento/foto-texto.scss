@@ -1,15 +1,12 @@
 .foto-texto {
   position: relative;
   padding: 6.5rem 0;
-  background-color: #2e3239;
+  background-color: var(--cinza-escuro);
 
   .container {
     // @media all and (min-width: 1200px) {
     //   max-width: 1000px;
     // }
-    @media all and (min-width: 1400px) {
-      max-width: 1000px !important;
-    }
 
     img {
       position: absolute;

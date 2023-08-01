@@ -1,0 +1,65 @@
+<!-- Form -->
+<section class="form-contato">
+  <div class="container">
+    <div class="wrapper">
+      <div class="form-heading">
+        <h2>Solicite mais informações sobre construção a preço de custo em Florianópolis.</h2>
+      </div>
+      <form action="" method="post">
+        <div class="field">
+          <div class="radio-boxes">
+            <label class="radio-label">
+              <input type="radio" name="departamento" value="Vendas" checked>
+              <span class="radio-text">Vendas</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="departamento" value="Informações">
+              <span class="radio-text">Informações</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="departamento" value="Atendimento Geral">
+              <span class="radio-text">Atendimento Geral</span>
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome e Sobrenome">
+        </div>
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="field">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(00) 0 0000-0000">
+            </div>
+          </div>
+          <div class="col">
+            <div class="field">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@exemplo.com.br">
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="empreendimento" class="form-label">Empreendimento</label>
+          <select class="form-select" name="empreendimento" id="empreendimento">
+            <option disabled selected>Selecione</option>
+            <option value="Residencial Évora">Residencial Évora</option>
+            <option value="Residencial Málaga">Residencial Málaga</option>
+            <option value="Residencial Amalfi">Residencial Amalfi</option>
+            <option value="Vila de Algarve">Vila de Algarve</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea name="mensagem" class="form-control" id="mensagem" rows="4" placeholder="digite aqui"></textarea>
+        </div>
+        <div class="d-flex">
+          <button type="submit" class="btn btn-primary">
+            Enviar <span class="bi-send"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

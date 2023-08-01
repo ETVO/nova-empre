@@ -1,4 +1,8 @@
 header {
+    // position: fixed;
+    // width: 100%;
+    // inset: 0;
+    // z-index: 9999;
     .header-top {
         padding: 1rem 0;
         background: linear-gradient(90deg, #083050 0%, #03618c 100%);
@@ -37,6 +41,8 @@ header {
 
     .navbar {
         padding: 1rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        background: var(--branco, #fff);
         .navbar-nav {
             @media all and (min-width: 992px) {
                 .nav-item {
@@ -47,7 +53,7 @@ header {
                     &:last-child {
                         border-right: none;
                     }
-                    
+
                     .nav-link {
                         line-height: 1.5;
                         font-weight: 500;

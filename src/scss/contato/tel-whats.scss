@@ -1,0 +1,70 @@
+.tel-whats {
+  padding: 8rem;
+
+  background-position: center;
+  background-size: cover;
+
+  .wrapper {
+    background-color: rgba(white, 0.9);
+    width: 768px;
+    max-width: 100%;
+    margin: auto;
+
+    display: flex;
+    padding: 3.4375rem 3.125rem;
+    justify-content: space-between;
+
+    h3 {
+      color: var(--cinza-escuro);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .contato {
+      flex: 1;
+      
+      &:first-child {
+        border-right: solid 2px var(--cinza);
+        margin-right: 3.125rem;
+        padding-right: 3.125rem;
+      }
+
+      a:not(.btn) {
+        text-decoration: none;
+        color: var(--cinza-escuro);
+        display: flex; align-items: center;
+        gap: .6rem;
+        
+        .icon {
+          font-size: 1rem;
+        }
+        .text {
+          font-size: 1.5rem;
+          letter-spacing: 0.075rem;
+        }
+      }
+      
+      .btn {
+        color: white;
+        text-align: center;
+        background: var(--gradiente-azul-verde);
+        border: none;
+        width: 100%;
+        padding: .85rem 1.25rem;
+
+        display: flex; align-items: center; justify-content: center;
+        gap: .6rem;
+
+        .icon {
+          font-size: 1rem;
+        }
+        .text {
+          font-size: 1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.faq {
+  padding: 5rem 0 7.5rem;
+
+  .accordion {
+    .accordion-item {
+      border-bottom: solid 2px var(--cinza-claro);
+      .accordion-header {
+        button {
+          color: var(--bs-primary);
+          font-size: 1.5rem;
+          font-weight: 700;
+          &::after {
+            background-image: none;
+            font-family: "bootstrap-icons";
+            content: "\F282";
+            font-size: 0.8rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            -webkit-text-stroke: 1px;
+            transform: rotate(90deg);
+          }
+
+          &:not(.collapsed) {
+            background: none;
+            &::after {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+
+      .accordion-body {
+        color: var(--cinza-escuro);
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 150%;
+
+        @media all and (min-width: 1200px) {
+          max-width: 768px;
+        }
+        @media all and (min-width: 1400px) {
+          max-width: 992px;
+        }
+      }
+    }
+  }
+}
