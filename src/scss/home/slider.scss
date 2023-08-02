@@ -125,6 +125,8 @@
       background: none;
       border: none;
 
+      transition: opacity .2s;
+
       &.prev {
         left: 1rem;
       }
@@ -139,6 +141,10 @@
         box-sizing: content-box;
         background: rgba(255, 255, 255, 0.2);
         color: white;
+      }
+
+      &:hover {
+        opacity: .6;
       }
     }
     &-indicators {

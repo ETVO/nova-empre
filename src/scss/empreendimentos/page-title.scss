@@ -1,8 +1,13 @@
 .page-title {
+  padding: 6.5rem 0 1.25rem;
+  background: var(--cinza-escuro);
   .title {
     font-size: 4.375rem;
     font-weight: 600;
     letter-spacing: 0.2625rem;
     text-transform: uppercase;
+    line-height: 1;
+    color: var(--cinza);
+    margin-bottom: 0;
   }
 }

@@ -7,7 +7,7 @@
       .accordion-header {
         button {
           color: var(--bs-primary);
-          font-size: 1.5rem;
+          font-size: 1.35rem;
           font-weight: 700;
           &::after {
             background-image: none;
@@ -31,7 +31,6 @@
 
       .accordion-body {
         color: var(--cinza-escuro);
-        font-size: 1.125rem;
         font-weight: 500;
         line-height: 150%;
 

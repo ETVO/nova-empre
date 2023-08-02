@@ -5,6 +5,7 @@
 
   &.content-right {
     background: #b5c1cb;
+    color: var(--cinza-escuro);
     
     &::before {
       opacity: .2;
@@ -71,7 +72,7 @@
 
       h2 {
         color: inherit;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         font-weight: 600;
         letter-spacing: 0.15rem;
         text-transform: uppercase;
@@ -79,7 +80,7 @@
       }
 
       p {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
         font-weight: 500;
       }
     }
