@@ -1,0 +1,35 @@
+.header-acesso {
+  position: relative;
+  .back-to {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 1.75rem;
+    height: 100%;
+    display: flex;
+
+    span {
+      margin: auto;
+      color: white;
+      font-size: 1.8rem;
+    }
+  }
+  .user-info {
+    display: flex;
+    align-items: baseline;
+    gap: 1.875rem;
+
+    .user-name {
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .logout-btn {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+  }
+}

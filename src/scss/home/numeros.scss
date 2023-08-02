@@ -31,6 +31,8 @@ $icon-size: 80px;
   }
 
   .container {
+    position: relative;
+    z-index: 1;
     .numero {
       padding: 1rem 3rem;
       text-align: center;

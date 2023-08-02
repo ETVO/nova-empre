@@ -5,17 +5,18 @@
 @import "./empreendimentos";
 @import "./a-nova";
 @import "./contato";
-
-// *::selection {
-//     background-color: rgba(mix(#2da29a, #00887f, 10%), .75);
-//     color: white;
-// }
+@import "./acesso";
 
 :root {
     --cinza-claro: #e6e7e8;
     --cinza-escuro: #2e3239;
     --gradiente-azul-verde: linear-gradient(90deg, #083050 0%, #0080b2 100%);
-    --cinza: #A7A9AC;
+    --cinza: #a7a9ac;
+}
+
+*::selection {
+    background-color: rgba(mix(mix(#a7a9ac, #083050, 20%), #0080b2, 80%), .75);
+    color: #fff; 
 }
 
 a {
@@ -86,6 +87,7 @@ form {
         font-size: 1.1rem;
         font-weight: 500;
         border: none;
+        border-radius: 0;
         background: rgba(209, 208, 207, 0.3);
         &::placeholder {
             color: rgba(#000, 0.3);
@@ -108,4 +110,9 @@ form {
         font-size: 1.1rem;
         font-weight: 700;
     }
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
 }
