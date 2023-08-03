@@ -1,0 +1,24 @@
+.header-signature {
+  .header-top {
+    padding: 0.725rem 0;
+    // padding: 0;
+    background: #000;
+
+    .logo {
+      margin: .2rem 0 -.25rem;
+    }
+  }
+  .navbar {
+    background: var(--cinza-escuro);
+    color: white;
+
+    .navbar-nav {
+      .nav-item {
+        border-right-color: rgba(#a7a9ac, 0.5);
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+  }
+}

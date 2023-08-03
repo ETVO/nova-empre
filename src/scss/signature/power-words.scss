@@ -1,0 +1,29 @@
+.power-words {
+  padding: 6.25rem 0 7.5rem;
+  background: var(--cinza-claro);
+  .signature-title {
+    margin-bottom: 5rem;
+  }
+  .words {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      color: var(--cinza-escuro);
+      position: relative;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 150%; /* 1.875rem */
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+    }
+    .divider {
+      width: 6px;
+      height: 6px;
+      background: var(--cinza); /* Set the color of the bullet */
+      border-radius: 50%;
+      // transform: translateY(-50%);
+    }
+  }
+}

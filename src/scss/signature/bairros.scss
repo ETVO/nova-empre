@@ -1,0 +1,22 @@
+.bairros {
+  padding: 6.25rem 0 7.5rem;
+
+  .signature-title {
+    margin-bottom: 5rem;
+  }
+
+  ul {
+    column-count: 3;
+    list-style: none;
+    li {
+      color: var(--cinza-escuro);
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 150%; /* 1.6875rem */
+      letter-spacing: 0.1125rem;
+      text-transform: uppercase;
+      margin-bottom: 1.56rem;
+      opacity: .6;
+    }
+  }
+}

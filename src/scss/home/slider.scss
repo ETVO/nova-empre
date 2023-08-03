@@ -1,10 +1,4 @@
-@mixin make-container($padding-x: $container-padding-x) {
-  width: 100%;
-  padding-right: $padding-x;
-  padding-left: $padding-x;
-  margin-right: auto;
-  margin-left: auto;
-}
+$control-icon-size: 3.75rem;
 
 .slider {
   padding: 4rem 0;
@@ -119,8 +113,7 @@
 
     &-control {
       position: absolute;
-      top: 0;
-      bottom: 0;
+      top: 0; bottom: 0;
       display: flex;
       background: none;
       border: none;
@@ -128,19 +121,29 @@
       transition: opacity .2s;
 
       &.prev {
-        left: 1rem;
+        left: 0;
       }
       &.next {
-        right: 1rem;
+        right: 0;
       }
 
       [class^="bi"] {
         margin: auto;
-        display: block;
-        padding: 1rem;
+        display: flex;
+        font-size: calc($control-icon-size / 2);
+
+        width: $control-icon-size;
+        height: $control-icon-size;
+
+        padding: 0;
         box-sizing: content-box;
         background: rgba(255, 255, 255, 0.2);
         color: white;
+
+        
+        &::before {
+            margin: auto;
+        }
       }
 
       &:hover {

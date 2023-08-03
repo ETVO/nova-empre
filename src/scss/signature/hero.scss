@@ -1,0 +1,110 @@
+$control-icon-size: 3.75rem;
+
+.hero-signature {
+  .carousel {
+    .carousel-item {
+      position: relative;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 550px;
+      }
+      .content-wrap {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: rgba(#fff, 0.7);
+
+        .content {
+          margin: auto;
+          text-align: center;
+
+          h1 {
+            color: #000;
+            text-transform: uppercase;
+            font-size: 3.125rem;
+            font-weight: 400;
+            letter-spacing: 1.5625rem;
+            
+            span {
+              margin-left: 1.5625rem;
+            }
+
+            .signature-font {
+              text-transform: none;
+              font-size: 7.625rem;
+              font-weight: 400;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+    }
+    .carousel-control {
+      &-prev {
+        &:hover {
+          background: linear-gradient(90deg, rgba(#000, 0.25), rgba(#000, 0));
+        }
+        padding-right: 5rem;
+
+        &-icon::before {
+          content: "\f284";
+        }
+      }
+      &-next {
+        &:hover {
+          background: linear-gradient(-90deg, rgba(#000, 0.25), rgba(#000, 0));
+        }
+
+        padding-left: 5rem;
+
+        &-icon::before {
+          content: "\f285";
+        }
+      }
+      &-prev,
+      &-next {
+        width: auto;
+        opacity: 1;
+        background: none;
+        transition: all 0.2s;
+
+        &-icon {
+          display: flex;
+          font-family: bootstrap-icons;
+          font-weight: bolder;
+          font-size: calc($control-icon-size / 2);
+
+          width: $control-icon-size;
+          height: $control-icon-size;
+
+          background-image: none;
+
+          background: none;
+          color: var(--cinza-escuro);
+          opacity: 1;
+
+          &::before {
+            margin: auto;
+          }
+        }
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .carousel-indicators {
+      button {
+        height: 5px;
+        width: 140px;
+        margin: 0 7.5px;
+        background-color: var(--cinza-escuro);
+      }
+    }
+  }
+}

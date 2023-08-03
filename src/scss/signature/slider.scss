@@ -1,0 +1,23 @@
+.slider-signature {
+  background-color: var(--cinza-escuro);
+  padding: 6.25rem 0 calc(3.12rem + 4rem);
+
+  .signature-title {
+    color: white;
+    margin-bottom: 4rem;
+  }
+
+  .multi-carousel {
+    &-control {
+      [class^="bi"] {
+        background: none;
+      }
+    }
+    &-indicators {
+      bottom: -4rem;
+      button {
+        height: 5px;
+      }
+    }
+  }
+}

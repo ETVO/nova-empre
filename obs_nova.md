@@ -9,13 +9,9 @@
 - Favicon
   
 - *IMPLEMENTAÇÃO*
-- Na coluna com vídeos em "Modelo de Construção a preço de custo", basta adicionar um vídeo, preferencialmente com a seguinte sintaxe:  
-`
-    <video width="400" height="400">
-      <source src="/path/to/video" type="video/mp4">   
-      O seu navegador não oferece suporte a vídeos.  
-    </video>
-`
+- Na página **A Nova**, nas colunas de vídeos em "Modelo de Construção a Preço de Custo" 
+  - Para adicionar um vídeo, basta alterar o atributo `src` do elemento `source`. 
+  - Para adicionar uma thumbnail, basta alterar o atributo `poster` do elemento `video` 
 - Nas páginas que usam drag-gallery ou dashboard-gallery, o gallery-modal deve estar presente, como segue:
 `
     <div class="gallery-modal">
