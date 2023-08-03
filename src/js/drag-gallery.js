@@ -44,18 +44,5 @@
       console.log(scrollWidth, $(window).width())
       scrollContainer.animate({ scrollLeft: scrollWidth }, animateDelay); // Scroll to the end position in animateDelay
     });
-
-    // Show the modal when an image is clicked
-    $('.drag-gallery-image').on('click', function () {
-      const $imgSrc = $(this).find('img').attr('src');
-      $('.drag-gallery-modal img').attr('src', $imgSrc);
-      $('.drag-gallery-modal').fadeIn(200);
-    });
-
-    // Close the modal when the close button or overlay is clicked
-    $('.drag-gallery-modal #overlay, .drag-gallery-modal #close').on('click', function (e) {
-      console.log('here');
-      $(this).closest('.drag-gallery-modal').fadeOut(200);
-    });
   }
 );

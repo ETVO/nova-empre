@@ -16,4 +16,15 @@
       O seu navegador não oferece suporte a vídeos.  
     </video>
 `
-    
+- Nas páginas que usam drag-gallery ou dashboard-gallery, o gallery-modal deve estar presente, como segue:
+`
+    <div class="gallery-modal">
+    <div id="overlay"></div>
+    <div class="modal-container">
+      <button class="close" id="close">
+        <span class="bi-x-lg"></span>
+      </button>
+      <img src="" alt="">
+    </div>
+  </div>
+`

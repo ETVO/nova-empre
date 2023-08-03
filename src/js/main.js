@@ -34,5 +34,18 @@ import './video-cols.js';
         $(this).addClass("valid-value");
 
     });
+
+
+    // Show the modal when an image is clicked
+    $('.gallery-has-modal .gallery-image').on('click', function () {
+      const $imgSrc = $(this).find('img').attr('src');
+      $('.gallery-modal img').attr('src', $imgSrc);
+      $('.gallery-modal').fadeIn(200);
+    });
+
+    // Close the modal when the close button or overlay is clicked
+    $('.gallery-modal #overlay, .gallery-modal #close').on('click', function (e) {
+      $(this).closest('.gallery-modal').fadeOut(200);
+    });
   }
 );

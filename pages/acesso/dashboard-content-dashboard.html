@@ -29,13 +29,26 @@
         <h2>Imagens recentes</h2>
       </div>
       <div class="section-content">
-        <div class="row row-cols-2 g-3">
-          <div class="col"><img src="/assets/img/empreendimento-galeria-1.jpg" alt=""></div>
-          <div class="col"><img src="/assets/img/empreendimento-galeria-2.jpg" alt=""></div>
-          <div class="col"><img src="/assets/img/empreendimento-galeria-1.jpg" alt=""></div>
-          <div class="col"><img src="/assets/img/empreendimento-galeria-2.jpg" alt=""></div>
+        <div class="gallery-has-modal">
+          <div class="row row-cols-2 g-3">
+            <div class="col"><div class="gallery-image"><img src="/assets/img/empreendimento-galeria-1.jpg" alt=""></div></div>
+            <div class="col"><div class="gallery-image"><img src="/assets/img/empreendimento-galeria-2.jpg" alt=""></div></div>
+            <div class="col"><div class="gallery-image"><img src="/assets/img/empreendimento-galeria-1.jpg" alt=""></div></div>
+            <div class="col"><div class="gallery-image"><img src="/assets/img/empreendimento-galeria-2.jpg" alt=""></div></div>
+          </div>
         </div>
       </div>
     </section>
+  </div>
+</div>
+
+<!-- Modal para visualização de imagem em Lightbox -->
+<div class="gallery-modal">
+  <div id="overlay" title="Voltar à página"></div>
+  <div class="modal-container">
+    <button class="close" id="close" title="Fechar">
+      <span class="bi-x-lg"></span>
+    </button>
+    <img src="" alt="">
   </div>
 </div>

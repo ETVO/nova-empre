@@ -1,0 +1,131 @@
+.dashboard-content {
+  display: flex;
+  padding: 3.125rem 7.5rem 7.5rem;
+  .container {
+    // width: 768px;
+    margin: 0;
+    .dashboard-title {
+      color: var(--cinza-escuro);
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 3.125rem;
+    }
+  }
+}
+
+.dashboard-section {
+  margin-bottom: 4rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.93rem;
+    margin-bottom: 1.93rem;
+
+    .icon img {
+      display: block;
+      height: 2.5rem;
+      width: 2.5rem;
+      object-fit: contain;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--cinza-escuro);
+      margin-bottom: 0;
+    }
+  }
+
+  .section-content {
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    & > img {
+      width: 768px;
+      max-width: 100%;
+    }
+    .list-group {
+      &-item {
+        padding: 0.93rem;
+        color: var(--cinza-escuro);
+        font-weight: 500;
+        border-bottom: 1px solid var(--cinza);
+        background: none;
+
+        &:last-child {
+          border-bottom: 1px solid var(--cinza);
+        }
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+    .accordion {
+      &-header button {
+        box-shadow: none;
+        background: none;
+        padding: 1.25rem 1.25rem 1.25rem;
+        color: var(--cinza-escuro);
+        font-size: 1.25rem;
+        font-weight: 700;
+        &::after {
+          background-image: none;
+          font-family: "bootstrap-icons";
+          content: "\F282";
+          font-size: 0.8em;
+          width: 1rem;
+          height: 1rem;
+          transform: rotate(90deg);
+        }
+
+        &:not(.collapsed) {
+          background: none;
+          &::after {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      &-body {
+        padding: 0.625rem 1.25rem 1.8rem;
+      }
+      &-item {
+        background: none;
+        border-bottom: 1px solid var(--cinza);
+      }
+    }
+
+    .dashboard-documents {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.9375rem;
+        margin-bottom: 1.25rem;
+        text-decoration: none;
+
+        color: #000;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 150%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .icon {
+          font-size: 1.5rem;
+          color: var(--cinza);
+        }
+      }
+    }
+  }
+}

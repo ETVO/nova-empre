@@ -1,37 +1,37 @@
 <!-- Galeria -->
 <section class="galeria">
-  <div class="drag-gallery">
+  <div class="drag-gallery gallery-has-modal">
 
     <div class="drag-gallery-inner">
       <div class="drag-gallery-col">
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-1.jpg" width="365" alt="">
         </div>
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-5.jpg" width="365" alt="">
         </div>
       </div>
       <div class="drag-gallery-col">
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-2.jpg" width="365" alt="">
         </div>
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-6.jpg" width="365" alt="">
         </div>
       </div>
       <div class="drag-gallery-col">
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-3.jpg" width="365" alt="">
         </div>
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-7.jpg" width="365" alt="">
         </div>
       </div>
       <div class="drag-gallery-col">
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-4.jpg" width="365" alt="">
         </div>
-        <div class="drag-gallery-image">
+        <div class="gallery-image">
           <img src="/assets/img/empreendimento-galeria-8.jpg" width="365" alt="">
         </div>
       </div>
@@ -48,12 +48,14 @@
     </button>
   </div>
 </section>
-<div class="drag-gallery-modal">
-  <div id="overlay"></div>
+
+<!-- Modal para visualização de imagem em Lightbox -->
+<div class="gallery-modal">
+  <div id="overlay" title="Voltar à página"></div>
   <div class="modal-container">
-    <button class="close" id="close">
+    <button class="close" id="close" title="Fechar">
       <span class="bi-x-lg"></span>
     </button>
-    <img src="/assets/img/empreendimento-galeria-7.jpg" alt="">
+    <img src="" alt="">
   </div>
 </div>
