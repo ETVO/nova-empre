@@ -1,7 +1,3 @@
-import './multi-carousel.js';
-import './drag-gallery.js';
-import './video-cols.js';
-
 (jQuery)(
   function ($) {
     const windowHeightBeforeFooter = $(document).height() - $(window).height() - 200;

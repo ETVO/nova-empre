@@ -1,5 +1,4 @@
 <!-- ÁREA DO CLIENTE PAGE -->
-
 <?php
 include 'partials/header-acesso.html';
 

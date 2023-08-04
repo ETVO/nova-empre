@@ -6,7 +6,7 @@
     // overflow-x: scroll;
     scroll-behavior: auto;
     cursor: grab;
-
+    
     &.dragging {
       cursor: grabbing;
     }
@@ -19,6 +19,7 @@
       .drag-gallery-col {
         .gallery-image {
           position: relative;
+          cursor: unset !important;
 
           img {
             width: 33vw;

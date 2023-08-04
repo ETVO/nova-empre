@@ -10,3 +10,4 @@ include "pages/signature/bairros.html";
 
 include 'partials/footer.html';
 ?>
+<script src="/assets/js/multi-carousel.js"></script>
