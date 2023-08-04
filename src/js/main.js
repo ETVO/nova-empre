@@ -4,7 +4,22 @@ import './video-cols.js';
 
 (jQuery)(
   function ($) {
-    // your-script.js
+    const windowHeightBeforeFooter = $(document).height() - $(window).height() - 200;
+    const header = $('#header');
+
+    $(window).on('load scroll', function () {
+        scroll = $(window).scrollTop();
+
+      var headerHeight = header.outerHeight();
+
+      if (scroll >= headerHeight && scroll < windowHeightBeforeFooter) {
+        header.addClass('scrolled');
+      }
+      else {
+        header.removeClass('scrolled');
+      }
+    });
+
     $(document).ready(function () {
       // Apply the input mask to the telephone input field
       $('#telefone').inputmask("(99) 9 9999-9999");

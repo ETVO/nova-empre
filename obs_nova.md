@@ -7,6 +7,7 @@
 - Número de whatsapp não parece ser válido - quando se clica no link ele não aparece o nome "Nova Empreendimentos"
 - Links para download do aplicativo (Apple Store e Google Play)
 - Favicon
+- O cabeçalho responde ao scroll da página, e diminui um pouco de tamanho para dar espaço ao conteúdo
   
 - *IMPLEMENTAÇÃO*
 - Na página **A Nova**, nas colunas de vídeos em "Modelo de Construção a Preço de Custo" 

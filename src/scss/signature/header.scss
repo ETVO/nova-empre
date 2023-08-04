@@ -12,6 +12,11 @@
     background: var(--cinza-escuro);
     color: white;
 
+    .expand-view {
+      color: white;
+      background: var(--cinza-escuro);
+    }
+
     .navbar-nav {
       .nav-item {
         border-right-color: rgba(#a7a9ac, 0.5);
