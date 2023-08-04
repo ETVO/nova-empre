@@ -8,6 +8,8 @@ $control-icon-size: 3.75rem;
             img {
                 display: block;
                 width: 100%;
+                min-height: 80vh;
+                object-fit: cover;
             }
             .content-wrap {
                 position: absolute;
@@ -59,7 +61,7 @@ $control-icon-size: 3.75rem;
                     background: linear-gradient(90deg, rgba(#000, 0.25), rgba(#000, 0));
                 }
                 padding-right: 5rem;
-                
+
                 &-icon::before {
                     content: "\f284";
                 }
@@ -70,7 +72,7 @@ $control-icon-size: 3.75rem;
                 }
 
                 padding-left: 5rem;
-                
+
                 &-icon::before {
                     content: "\f285";
                 }
@@ -104,7 +106,7 @@ $control-icon-size: 3.75rem;
                 }
 
                 &:active {
-                    opacity: .8;
+                    opacity: 0.8;
                 }
             }
         }

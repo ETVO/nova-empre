@@ -34,10 +34,9 @@ footer {
 
     .info {
       display: flex;
-      margin-bottom: 4rem;
 
-      &:last-child {
-        margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
       }
 
       h5 {
@@ -52,10 +51,9 @@ footer {
 
         .contact {
           display: block;
-          margin-bottom: 0.5rem;
 
-          &:last-child {
-            margin-bottom: 0;
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
           }
         }
       }
@@ -69,12 +67,13 @@ footer {
         margin-left: auto;
         a {
           font-size: 2rem;
-          margin-right: 2.8rem;
+          &:not(:last-child) {
+            margin-right: 2.8rem;
+          }
         }
       }
 
       .logo {
-        // margin: auto 0;
         align-self: center;
         margin-right: 5.25rem;
         img {
@@ -112,6 +111,32 @@ footer {
 
     &.highlight {
       font-weight: 800;
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+  footer {
+    > .container .info {
+      align-items: center;
+      
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      .contacts {
+        margin-right: 2rem;
+        padding-right: 2rem;
+      }
+
+      .social {
+        a {
+          font-size: 1.5rem;
+          &:not(:last-child) {
+            margin-right: 1.4rem;
+          }
+        }
+      }
     }
   }
 }

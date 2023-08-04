@@ -2,6 +2,7 @@
   margin: 6rem 0 2.5rem;
 
   .row {
+    justify-content: center;
     .col {
       .video-inner {
         position: relative;
@@ -9,13 +10,17 @@
         &.playing {
           .video-overlay {
             opacity: 0;
+            background: none;
+            .video-title {
+              opacity: 0;
+            }
           }
 
-          // &:hover {
-          //   .video-overlay {
-          //     opacity: 1;
-          //   }
-          // }
+          &:hover {
+            .video-overlay {
+              opacity: 0.25;
+            }
+          }
         }
 
         video,
@@ -40,7 +45,7 @@
           background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 20.78%, rgba(0, 0, 0, 0) 50.45%),
             linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 
-          transition: opacity .2s;
+          transition: opacity 0.2s;
 
           .video-button {
             position: absolute;
@@ -55,9 +60,8 @@
             text-shadow: 0 0 30px rgba(#000, 0.5);
 
             transition: font-size 0.2s;
-
           }
-          &:hover .video-button{
+          &:hover .video-button {
             font-size: 5.5rem;
           }
           .video-title {
@@ -69,6 +73,38 @@
             word-wrap: break-word;
             hyphens: auto;
           }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1500px) {
+  .video-cols {
+    .row .col .video-inner .video-overlay {
+      padding: 1rem;
+      @media all and (min-width: 1200px) {
+        .video-title {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  @media all and (max-width: 1315px) {
+    .video-cols {
+      .row .col {
+        .video-inner .video-overlay .video-title {
+          font-size: 1.2rem;
+        }
+        padding: 0 0.5rem;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
         }
       }
     }

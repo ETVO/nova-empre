@@ -1,8 +1,37 @@
-@import './a-nova/hero.scss';
-@import './a-nova/mission.scss';
-@import './a-nova/video-invest.scss';
-@import './a-nova/foto-conteudo.scss';
-@import './home/numeros.scss';
-@import './a-nova/video-cols.scss';
-@import './a-nova/faq.scss';
-@import './a-nova/empre-destaque.scss';
+@import "./a-nova/hero.scss";
+@import "./a-nova/mission.scss";
+@import "./a-nova/video-invest.scss";
+@import "./a-nova/foto-conteudo.scss";
+@import "./home/numeros.scss";
+@import "./a-nova/video-cols.scss";
+@import "./a-nova/faq.scss";
+@import "./a-nova/empre-destaque.scss";
+
+@media all and (min-width: 1500px) {
+  .video-cols {
+    .container-fluid {
+      width: 70vw;
+      min-width: 1500px;
+    }
+    .row .col .video-inner {
+      video, img {
+        height: calc(400px + 4vw);
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 1200px) {
+  .video-invest {
+    .container {
+      .content {
+        padding-right: 4.5rem;
+      }
+      iframe {
+        right: 4.5rem;
+        width: calc(50% - 4.5rem);
+      }
+    }
+  }
+}

@@ -11,62 +11,67 @@
             margin-bottom: 3rem;
         }
         .wrap {
-            display: grid;
-            grid-template-areas: "frame content";
-            column-gap: 5rem;
-            width: 900px;
+            width: calc(900px + 5vw);
             max-width: 100%;
             margin: auto;
 
-            .frame {
-                grid-area: frame;
+            .frame-col {
                 display: flex;
-                align-items: center;
-                text-transform: uppercase;
-                margin-left: auto;
-                font-size: 1.2rem;
+                justify-content: center;
 
-                &-main {
-                    border: 5px solid #e6eaed;
-                    padding: 0 1rem 1rem;
-                    text-align: center;
-                    .big {
-                        font-weight: 600;
-                        line-height: 1;
-                        font-size: calc(6em + 1.6vw);
-                        letter-spacing: -7.5px;
-                        color: var(--bs-primary);
-                    }
-                    div:not(.big) {
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                    }
+                @media all and (max-width: 992px) {
+                    padding-bottom: 2.5rem;
                 }
-                &-side {
-                    text-align: left;
-                    display: flex;
-                    flex-flow: column;
-                    gap: 0.5em;
-                    
-                    .frame-small {
-                        padding: 0.25rem 0.5rem;
-                        color: var(--bs-dark);
 
-                        &.frame-1 {
-                            background-color: #8398a7;
-                            color: white;
+                .frame {
+                    align-self: center;
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+    
+                    &-main {
+                        border: 5px solid #e6eaed;
+                        padding: 0 1rem 1rem;
+                        text-align: center;
+                        .big {
+                            font-weight: 600;
+                            line-height: 1;
+                            font-size: calc(6em + 1.6vw);
+                            letter-spacing: -7.5px;
+                            color: var(--bs-primary);
                         }
-                        &.frame-2 {
-                            background-color: #b5c1cb;
+                        div:not(.big) {
+                            font-weight: 600;
+                            letter-spacing: 2px;
                         }
-                        &.frame-3 {
-                            background-color: #e6eaed;
+                    }
+                    &-side {
+                        text-align: left;
+                        display: flex;
+                        flex-flow: column;
+                        gap: 0.5em;
+                        
+                        .frame-small {
+                            padding: 0.25rem 0.5rem;
+                            color: var(--bs-dark);
+    
+                            &.frame-1 {
+                                background-color: #8398a7;
+                                color: white;
+                            }
+                            &.frame-2 {
+                                background-color: #b5c1cb;
+                            }
+                            &.frame-3 {
+                                background-color: #e6eaed;
+                            }
                         }
                     }
                 }
             }
+
             .content {
-                grid-area: content;
                 text-align: start;
                 line-height: 1.5;
                 font-weight: 500;

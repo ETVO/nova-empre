@@ -23,6 +23,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @media all and (min-width: 1200px) {
+      max-width: 992px;
+    }
+
     .heading {
       color: white;
 
@@ -55,11 +59,11 @@
       width: 385px;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         inset: -1.25rem;
         z-index: -1;
-        background: rgba(#fff, .3);
+        background: rgba(#fff, 0.3);
       }
 
       .submit-wrap {

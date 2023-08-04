@@ -8,3 +8,15 @@
 @import "./empreendimento/plantas-slider";
 @import "./empreendimento/book";
 @import "./empreendimento/proximidades";
+
+@media all and (min-width: 1500px) {
+  .foto-texto {
+    padding: 8rem 0;
+    .container p {
+      font-size: 1.5rem;
+    }
+  }
+  .galeria .drag-gallery-inner .drag-gallery-col .gallery-image img {
+    width: 25vw;
+  }
+}

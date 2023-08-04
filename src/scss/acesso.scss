@@ -1,6 +1,21 @@
 @import './acesso/login.scss';
 @import './acesso/header.scss';
+@import './empreendimentos/page-title.scss';
 @import './a-nova/empre-destaque.scss';
 @import './acesso/selec-empre.scss';
 @import './acesso/dashboard.scss';
 @import './acesso/dashboard-templates.scss';
+
+
+@media all and (min-width: 1500px) {
+  .header-acesso .header-top .container {
+    max-width: 100% !important;
+    padding: 0 7.5rem;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .dashboard-content {
+    padding: 3.125rem 3.125rem 7.5rem;
+  }
+}

@@ -3,6 +3,7 @@ $control-icon-size: 3.75rem;
 .slider {
   padding: 4rem 0;
   background-color: #031d33;
+
   .multi-carousel {
     position: relative;
     padding: 0 5rem;
@@ -12,14 +13,14 @@ $control-icon-size: 3.75rem;
       width: 100%;
       overflow: hidden;
       // background-color: rgba(red, .25);
-      
+
       .multi-carousel-item {
         flex: 1;
         position: relative;
         margin: 0 0.5rem;
         cursor: pointer;
         opacity: 1;
-        transition: opacity .2s;
+        transition: opacity 0.2s;
 
         &:not(.active) {
           opacity: 0;
@@ -54,10 +55,9 @@ $control-icon-size: 3.75rem;
           padding: 1.5rem;
           display: flex;
           flex-flow: column;
-          
-          
+
           transform: translateY(4rem);
-          
+
           .local,
           .btn {
             opacity: 0;
@@ -67,8 +67,9 @@ $control-icon-size: 3.75rem;
           transition: transform 0.2s;
 
           img {
-            width: calc(100% - 4rem);
+            width: calc(100px + 1.5vw);
             margin: auto;
+            max-width: 100%;
           }
 
           .local {
@@ -113,12 +114,13 @@ $control-icon-size: 3.75rem;
 
     &-control {
       position: absolute;
-      top: 0; bottom: 0;
+      top: 0;
+      bottom: 0;
       display: flex;
       background: none;
       border: none;
 
-      transition: opacity .2s;
+      transition: opacity 0.2s;
 
       &.prev {
         left: 0;
@@ -140,19 +142,20 @@ $control-icon-size: 3.75rem;
         background: rgba(255, 255, 255, 0.2);
         color: white;
 
-        
         &::before {
-            margin: auto;
+          margin: auto;
         }
       }
 
       &:hover {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
     &-indicators {
       position: absolute;
-      bottom: -3rem; left: 0; right: 0;
+      bottom: -3rem;
+      left: 0;
+      right: 0;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -167,8 +170,8 @@ $control-icon-size: 3.75rem;
         width: 140px;
         border: none;
         background: white;
-        opacity: .6;
-        transition: opacity .2s;
+        opacity: 0.6;
+        transition: opacity 0.2s;
 
         &:hover {
           opacity: 1;
@@ -177,6 +180,34 @@ $control-icon-size: 3.75rem;
         &.active {
           opacity: 1;
         }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .slider {
+    .container-fluid {
+      width: 70vw;
+      min-width: 1500px;
+    }
+    .multi-carousel {
+      &-inner .multi-carousel-item .overlay img {
+        width: calc(125px + 1.5vw);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1120px) {
+  .slider {
+    .multi-carousel {
+      padding: 0 3.5rem;
+      &-control [class^="bi"] {
+        font-size: calc($control-icon-size / 3);
+
+        width: calc($control-icon-size / 1.5);
+        height: calc($control-icon-size / 1.5);
       }
     }
   }

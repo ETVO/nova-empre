@@ -21,7 +21,7 @@
       $('#telefone').inputmask("(99) 9 9999-9999");
     });
 
-    $('.multi-carousel-item, .empre').on('click', function () {
+    $('.link-on-click').on('click', function () {
       const link = $(this).find("a").attr("href");
       if (link) {
         window.location.href = link;

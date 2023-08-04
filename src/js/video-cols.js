@@ -12,7 +12,7 @@
       // }
     });
 
-    $('.video-inner video').on('ended', function() {
+    $('.video-inner video').on('ended', function () {
       $(this).parent('.video-inner').removeClass("playing");
     });
 
@@ -23,13 +23,18 @@
       if (!$videoPlayer)
         return;
 
-      if ($videoPlayer.get(0).paused)
+      if ($videoPlayer.get(0).paused) {
         $videoPlayer.get(0).play();
-      else
+        $(this).find('.video-button').removeClass("bi-play-fill");
+        $(this).find('.video-button').addClass("bi-pause-fill");
+      }
+      else {
         $videoPlayer.get(0).pause();
+        $(this).find('.video-button').removeClass("bi-pause-fill");
+        $(this).find('.video-button').addClass("bi-play-fill");
+      }
 
       $parent.toggleClass("playing");
-      $(this).find('.video-button').toggleClass("bi-pause-fill");
     });
   }
 );
