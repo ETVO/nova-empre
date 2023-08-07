@@ -7,7 +7,7 @@
 $active_item = $active_item ?? 'dashboard'; ?>
 
 <div class="dashboard-menu">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-md">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="bi-list"></span>
     </button>

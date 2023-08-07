@@ -21,7 +21,8 @@ header {
 		transition:
 			all 0.2s,
 			margin-top 0.4s,
-			font-size 0s;
+			font-size 0s,
+			color 0s;
 	}
 
 	&.scrolled {
@@ -192,7 +193,7 @@ header {
 				display: none;
 			}
 			.navbar-nav {
-				margin-top: 1rem;
+				margin-top: .5rem;
 				text-align: center;
 				.nav-item {
 					display: inline-block;

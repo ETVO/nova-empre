@@ -5,7 +5,7 @@
 @import "./home/pilares";
 @import "./home/video-dep";
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1600px) {
   .hero-cta {
     .carousel .carousel-item .content-wrap .content {
       width: auto;
@@ -28,7 +28,7 @@
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1200px) {
   .hero-cta {
     .carousel .carousel-indicators {
       margin-bottom: 0.75rem;
@@ -51,7 +51,11 @@
   }
 }
 
-
 @media all and (max-width: 992px) {
-  
+  .pilares {
+    ul li button {
+      font-size: calc(1.25rem + .1vw);
+      padding: 1.5rem 1rem;
+    }
+  }
 }

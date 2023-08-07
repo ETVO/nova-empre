@@ -69,10 +69,11 @@
 
   .navbar-nav {
     width: 100%;
+    font-size: 1rem;
     .nav-item .nav-link {
       color: white;
+      font-size: 1.125em;
       padding: 0.65rem;
-      font-size: 1.125rem;
       font-weight: 600;
       margin-left: 5px;
       display: flex;
@@ -86,14 +87,14 @@
       }
 
       img {
-        width: 1.5rem;
+        width: 1.25em;
         margin-bottom: 0.2rem;
       }
 
       &:not(:has(img)) {
-        padding-left: calc(0.65rem + 2.125rem);
+        padding-left: calc(0.65rem + .8rem + 1.25em);
         color: var(--cinza-claro);
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: 500;
         line-height: 150%; /* 1.5rem */
       }

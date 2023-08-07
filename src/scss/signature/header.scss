@@ -12,9 +12,13 @@
     background: var(--cinza-escuro);
     color: white;
 
-    .expand-view {
+    .expand-view, .navbar-toggler, .navbar-toggler-expand {
       color: white;
       background: var(--cinza-escuro);
+    }
+
+    .navbar-toggler {
+      border-color: white;
     }
 
     .navbar-nav {

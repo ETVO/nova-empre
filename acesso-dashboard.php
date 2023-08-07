@@ -15,8 +15,8 @@ if(isset($_GET['page']))
   </div>
   <div class="content">
     <?php 
-    if(isset($active_item))
-      include 'pages/acesso/dashboard-content-'.$active_item.'.html'; 
+      if(isset($active_item)){
+        include 'pages/acesso/dashboard-content-'.$active_item.'.html';} 
     else
       include 'pages/acesso/dashboard-content-dashboard.html'; 
       ?>

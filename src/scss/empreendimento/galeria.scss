@@ -1,12 +1,72 @@
+@keyframes dragging {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fadeOut {
+}
+
 .galeria {
   position: relative;
   margin: 1.875rem 0;
+
+  .drag-instruction {
+    display: none;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    background: rgba(#000, 0.4);
+    color: white;
+    animation: fadeOut 3s forwards;
+
+    .inner {
+      display: flex;
+      align-items: center;
+      font-size: 0.7rem;
+    }
+    .icon {
+      margin-left: 0.5rem;
+      margin-right: 0.625rem;
+      animation: dragging 1.5s infinite;
+    }
+    .text {
+      // font-style: italic;
+      font-weight: 500;
+    }
+  }
+
   .drag-gallery {
     overflow: hidden;
     // overflow-x: scroll;
     scroll-behavior: auto;
     cursor: grab;
-    
+
     &.dragging {
       cursor: grabbing;
     }
@@ -91,7 +151,7 @@
   width: 100%;
   height: calc(100%);
   z-index: 9999;
-  
+
   #overlay {
     background-color: rgba(#000, 0.6);
     position: absolute;
@@ -99,7 +159,7 @@
     width: 100%;
     height: 100%;
   }
-  
+
   .modal-container {
     position: absolute;
     top: 50%;
@@ -107,36 +167,36 @@
     transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 100%;
-    
+
     img {
       cursor: auto;
       width: 1200px;
       height: auto;
-      max-width:  100%;
+      max-width: 100%;
       max-height: 100%;
       margin: auto;
       object-fit: contain;
-      border: solid .2rem white;
+      border: solid 0.2rem white;
     }
 
     .close {
       position: absolute;
       top: 1rem;
       right: 1rem;
-      padding: .5rem;
+      padding: 0.5rem;
       font-size: 1.25rem;
       color: white;
-      background: rgba(#000, .2);
+      background: rgba(#000, 0.2);
       border: none;
-      border-radius: .25rem;
+      border-radius: 0.25rem;
 
-      transition: background .2s;
+      transition: background 0.2s;
 
       &:hover {
-        background: rgba(#000, .4);
+        background: rgba(#000, 0.4);
       }
       &:active {
-        background: rgba(#000, .6);
+        background: rgba(#000, 0.6);
       }
     }
   }

@@ -1,2 +1,27 @@
 @import "./empreendimentos/page-title";
 @import "./empreendimentos/empre-list-view";
+
+@media all and (max-width: 992px) {
+  .empre-list-view {
+    .empre {
+      .container {
+        .heading h2 {
+          font-size: calc(2rem + 0.9vw);
+        }
+        .info p {
+          font-size: 1rem;
+          &.highlight {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  .page-title,
+  .empre-list-view {
+    .container {
+      max-width: 768px;
+    }
+  }
+}

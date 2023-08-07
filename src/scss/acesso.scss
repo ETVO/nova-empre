@@ -1,21 +1,71 @@
-@import './acesso/login.scss';
-@import './acesso/header.scss';
-@import './empreendimentos/page-title.scss';
-@import './a-nova/empre-destaque.scss';
-@import './acesso/selec-empre.scss';
-@import './acesso/dashboard.scss';
-@import './acesso/dashboard-templates.scss';
-
-
-@media all and (min-width: 1500px) {
-  .header-acesso .header-top .container {
-    max-width: 100% !important;
-    padding: 0 7.5rem;
-  }
-}
+@import "./acesso/login.scss";
+@import "./acesso/header.scss";
+@import "./empreendimentos/page-title.scss";
+@import "./a-nova/empre-destaque.scss";
+@import "./acesso/selec-empre.scss";
+@import "./acesso/dashboard.scss";
+@import "./acesso/dashboard-templates.scss";
 
 @media all and (max-width: 1300px) {
   .dashboard-content {
     padding: 3.125rem 3.125rem 7.5rem;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .login {
+    padding: 7.5rem 0;
+    .container {
+      .heading {
+        width: calc(100% / 2);
+        padding-right: 1.5rem;
+        h1 {
+          font-size: calc(1.5rem + 0.9vw);
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      form {
+        width: calc(100% / 2);
+        margin-left: 1rem;
+
+        &::before {
+          inset: -1rem;
+        }
+
+        .submit-wrap a {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .acesso-dashboard .sidebar {
+    width: 35vw;
+  }
+
+  .dashboard-content {
+    padding: 3.125rem 1.56rem 7.5rem;
+  }
+
+  .dashboard-menu {
+    .navbar-nav {
+      font-size: 0.85rem;
+    }
+  }
+  .dashboard-section .section-content .accordion {
+    &-header button {
+      padding: 1rem 0;
+    }
+    &-body {
+      padding: 0.625rem 0 1.5rem;
+    }
+  }
+  .dashboard-heading {
+    .container h1 {
+      font-size: calc(2rem + 1.5vw);
+    }
   }
 }

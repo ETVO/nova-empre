@@ -45,6 +45,7 @@
           .radio-boxes {
             display: flex;
             gap: 0.625rem;
+            font-size: 1.125rem;
 
             .radio-label {
               cursor: pointer;
@@ -61,11 +62,10 @@
                 display: block;
                 background: var(--cinza-claro);
                 color: var(--cinza);
-                padding: 0.9rem 1.25rem;
+                padding: 0.9rem 1.125rem;
                 text-align: right;
-                font-size: 1.125rem;
                 font-weight: 600;
-                letter-spacing: 0.1125rem;
+                letter-spacing: 0.1125em;
                 text-transform: uppercase;
 
                 transition: background .2s;

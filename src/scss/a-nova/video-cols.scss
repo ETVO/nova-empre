@@ -47,6 +47,8 @@
 
           transition: opacity 0.2s;
 
+          font-size: 1rem;
+
           .video-button {
             position: absolute;
             left: 50%;
@@ -55,19 +57,19 @@
             color: white;
             background: none;
             border: none;
-            font-size: 4.5rem;
+            font-size: 4.5em;
             text-align: center;
             text-shadow: 0 0 30px rgba(#000, 0.5);
 
             transition: font-size 0.2s;
           }
           &:hover .video-button {
-            font-size: 5.5rem;
+            font-size: 5.5em;
           }
           .video-title {
             margin-top: auto;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.5em;
             font-weight: 600;
             line-height: 1.2; /* 1.35rem */
             word-wrap: break-word;
@@ -85,7 +87,7 @@
       padding: 1rem;
       @media all and (min-width: 1200px) {
         .video-title {
-          font-size: 1.3rem;
+          font-size: 1.3em;
         }
       }
     }
@@ -96,8 +98,8 @@
   @media all and (max-width: 1315px) {
     .video-cols {
       .row .col {
-        .video-inner .video-overlay .video-title {
-          font-size: 1.2rem;
+        .video-inner .video-overlay {
+          font-size: 0.9rem;
         }
         padding: 0 0.5rem;
         &:first-child {
@@ -106,6 +108,24 @@
         &:last-child {
           padding-right: 0;
         }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 992px) {
+  .video-cols {
+    .row .col {
+      .video-inner .video-overlay {
+        font-size: 0.85em;
+      }
+      padding: 0 0.5rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
       }
     }
   }

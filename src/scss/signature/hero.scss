@@ -21,21 +21,22 @@ $control-icon-size: 3.75rem;
         .content {
           margin: auto;
           text-align: center;
+          font-size: calc(2.5rem + .4vw);
 
           h1 {
             color: #000;
+            font-size: 1em;
             text-transform: uppercase;
-            font-size: 3.125rem;
             font-weight: 400;
-            letter-spacing: 1.5625rem;
+            letter-spacing: .5em;
             
             span {
-              margin-left: 1.5625rem;
+              margin-left: .5em;
             }
 
             .signature-font {
               text-transform: none;
-              font-size: 7.625rem;
+              font-size: 2.44em;
               font-weight: 400;
               letter-spacing: 0;
             }

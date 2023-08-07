@@ -9,7 +9,7 @@
 @import "./empreendimento/book";
 @import "./empreendimento/proximidades";
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1600px) {
   .foto-texto {
     padding: 8rem 0;
     .container p {
@@ -18,5 +18,75 @@
   }
   .galeria .drag-gallery-inner .drag-gallery-col .gallery-image img {
     width: 25vw;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .icones {
+    .container {
+      gap: 5rem;
+    }
+  }
+  .book .container .content {
+    padding-right: 5rem;
+    h2 {
+      font-size: calc(2.25rem + 0.9vw);
+    }
+    p {
+      font-size: 1.75rem;
+      margin-bottom: 7.5rem;
+    }
+
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.625rem 1.25rem;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .foto-texto {
+    .container {
+      img {
+        width: 40%;
+      }
+      p {
+        width: 60%;
+        margin-left: auto;
+        padding-left: 3.5rem;
+      }
+    }
+  }
+}
+@media all and (max-width: 992px) {
+  .icones {
+    .container {
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+  .book .container {
+    width: 850px;
+    max-width: 100% !important;
+
+    img {
+      width: 40%;
+    }
+    .content {
+      width: 60%;
+      padding-right: 3.5rem;
+      h2 {
+        font-size: calc(2rem + 0.9vw);
+      }
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+        padding: 0.625rem 1.25rem;
+      }
+    }
   }
 }
