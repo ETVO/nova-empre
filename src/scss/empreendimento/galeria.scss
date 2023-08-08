@@ -74,6 +74,7 @@
       margin-right: 0.5rem;
       margin-left: 0.625rem;
       animation: dragging-reverse 1.5s infinite;
+      display: none;
     }
     .text {
       // font-style: italic;
@@ -162,6 +163,11 @@
         color: var(--bs-primary);
         font-size: 2rem;
         -webkit-text-stroke: 2px;
+
+        @media all and (max-width:576px) {
+          font-size: 1em;
+          padding: .375rem .5rem;
+        }
       }
     }
   }

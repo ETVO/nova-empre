@@ -233,13 +233,13 @@
 @media all and (max-width: 576px) {
   .hero {
     padding: 6.5rem 0;
-    text-align: center;
 
     &::after {
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
     }
 
     h1 {
+      font-size: calc(2rem + .9vw);
       width: auto;
       margin: auto;
       margin-bottom: 2rem;
@@ -247,6 +247,7 @@
     p {
       width: auto;
       margin: auto;
+      font-size: 1.1rem;
     }
   }
 
@@ -282,7 +283,7 @@
 @media all and (max-width: 450px) {
   .caracter-list {
     ul {
-      // column-count: 1;
+      padding: 0;
       font-size: 0.9rem;
       li {
         margin-bottom: 0.5rem;
@@ -320,28 +321,6 @@
     .container .content .btn {
       display: inline-flex;
       flex-flow: column-reverse;
-    }
-  }
-}
-
-@media all and (max-width: 375px) {
-  .hero {
-    padding: 6.5rem 0;
-    text-align: center;
-
-    &::after {
-      background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
-    }
-
-    h1 {
-      font-size: calc(2rem + .9vw);
-      width: auto;
-      margin: auto;
-      margin-bottom: 2rem;
-    }
-    p {
-      width: auto;
-      margin: auto;
     }
   }
 }

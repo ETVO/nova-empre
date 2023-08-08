@@ -115,15 +115,52 @@
 }
 
 @media all and (max-width: 576px) {
-  .hero-cta .carousel .carousel-item .content-wrap .content {
-    .title {
-      font-weight: 600;
+  .hero-cta .carousel .carousel-item .content-wrap {
+    padding: 0 0.75rem;
+    .content {
+      padding: 1.5rem 0.75rem;
+      .title {
+        font-weight: 600;
+        word-wrap: break-word;
+      }
     }
   }
 
   .pilares {
     .tab-content .tab-pane .overlay {
       padding: 4.5rem 1.25rem;
+      h2 {
+        font-size: calc(1.5rem + 0.9vw);
+      }
+    }
+  }
+}
+@media all and (max-width: 375px) {
+  .hero-cta .carousel .carousel-item .content-wrap {
+    padding: 0.5rem;
+    .content {
+      padding: 1.5rem 0.5rem;
+      .title {
+        letter-spacing: 0.2em;
+      }
+      .local {
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+
+  .pilares {
+    .tab-content .tab-pane .overlay {
+      padding: 4.5rem 1.25rem;
+    }
+  }
+  .video-dep {
+    .wrapper {
+      margin-bottom: 2.5rem;
+      .depoimentos .depoimento-item:not(:last-child) {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

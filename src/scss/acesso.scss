@@ -153,3 +153,18 @@
     }
   }
 }
+
+@media all and (max-width: 450px) {
+  .login {
+    .container {
+      .heading {
+        h1 {
+          font-size: calc(1.5rem + 0.9vw);
+        }
+        p {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
