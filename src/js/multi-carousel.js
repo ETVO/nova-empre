@@ -16,7 +16,7 @@
         case (width >= 768):
           cols = $carousel.data('cols-md');
           if (cols) break;
-        case (width >= 576):
+        case (width >= 460):
           cols = $carousel.data('cols-sm');
           if (cols) break;
         default:
@@ -57,15 +57,14 @@
     $('.multi-carousel-control.prev').on('click', moveCarousel);
 
     const animateDelay = 600;
-    function moveCarousel() {
 
+    function moveCarousel() {
       var direction = 'next';
       if ($(this).hasClass('prev')) direction = 'prev';
 
       const animateDirection = direction == 'prev'
         ? 'right'
         : 'left';
-
 
       var $carousel = $(this).parent('.multi-carousel');
       var $inner = $carousel.find('.multi-carousel-inner');
@@ -107,12 +106,12 @@
 
       setTimeout(() => {
         if (direction == 'prev') {
-          $inner.find('.multi-carousel-item.active').last().removeClass('active');
           $inner.find('.multi-carousel-item.active').first().prev().addClass('active');
+          $inner.find('.multi-carousel-item.active').last().removeClass('active');
         }
         else {
-          $inner.find('.multi-carousel-item.active').first().removeClass('active');
           $inner.find('.multi-carousel-item.active').last().next().addClass('active');
+          $inner.find('.multi-carousel-item.active').first().removeClass('active');
         }
       }, animateDelay)
 

@@ -20,3 +20,32 @@
     }
   }
 }
+@media all and (max-width: 768px) {
+  .tel-whats {
+    padding: 5.5rem 0;
+
+    .wrapper {
+      width: auto;
+      max-width: 100%;
+      padding: 2rem;
+      flex-flow: column;
+      align-items: center;
+      .contato {
+        font-size: 0.9rem;
+        text-align: center;
+        &:first-child {
+          border-right: 0;
+          padding-right: 0;
+          margin-right: 0;
+
+          border-bottom: solid 2px var(--cinza);
+          margin-bottom: 2rem;
+          padding-bottom: 2rem;
+        }
+        a:not(.btn) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

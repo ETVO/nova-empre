@@ -69,3 +69,68 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .login {
+    .container {
+      flex-flow: column;
+      align-items: stretch;
+      .heading {
+        width: auto;
+        margin-bottom: 3.5rem;
+        padding-right: 0;
+        h1 {
+          font-size: calc(2rem + 0.9vw);
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      form {
+        width: auto;
+        margin-left: 0;
+
+        .submit-wrap a {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  .acesso-dashboard {
+    flex-flow: column;
+    .sidebar {
+      width: auto;
+    }
+  }
+
+  .dashboard-menu {
+    height: auto;
+
+    .navbar {
+      flex-wrap: wrap;
+      max-width: 576px !important;
+      margin: auto;
+      padding: 0 1.25rem;
+    }
+
+    .navbar-nav {
+      margin-left: 1rem;
+    }
+  }
+
+  .dashboard-content {
+    padding: 3.125rem 0 7.5rem;
+    .container {
+      // max-width: 100% !important;
+      margin: auto;
+    }
+  }
+  
+  .dashboard-heading {
+    .container {
+      // max-width: 100% !important; 
+    }
+  }
+}

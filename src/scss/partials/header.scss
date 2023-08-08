@@ -215,3 +215,45 @@ header {
 		}
 	}
 }
+
+
+@media all and (max-width: 768px) {
+	header {
+		.header-top {
+			.contatos {
+				gap: 1.5rem;
+				font-size: .8rem;
+			}
+		}
+		.container {
+			max-width: 576px;
+		}
+	}
+}
+
+
+@media all and (max-width: 470px) {
+	header {
+		&.scrolled {
+			.header-top {
+				.contatos {
+					font-size: .85rem;
+				}
+			}
+
+		}
+		.header-top {
+			.contatos {
+				gap: 1rem;
+				font-size: .75rem;
+				div {
+					display: none;
+				}
+			}
+		}
+		.container {
+			max-width: 576px;
+		}
+	}
+}
+

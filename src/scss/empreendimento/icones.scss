@@ -8,11 +8,16 @@
     gap: 7rem;
 
     .icon {
-      display: flex;flex-flow: column;
+      display: flex; flex-flow: column;
       text-align: center;
       font-size: .875rem;
       font-weight: 500;
       gap: .6rem;
+      img {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
 }

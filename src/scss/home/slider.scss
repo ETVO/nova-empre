@@ -12,7 +12,7 @@ $control-icon-size: 3.75rem;
       display: flex;
       width: 100%;
       // background-color: rgba(red, .25);
-      
+
       .multi-carousel-item {
         margin: 0 0.5rem;
 
@@ -124,10 +124,40 @@ $control-icon-size: 3.75rem;
     .multi-carousel {
       padding: 0 3.5rem;
       &-control [class^="bi"] {
-        font-size: calc($control-icon-size / 3);
+        $control-icon-size: 3rem;
+        font-size: calc($control-icon-size / 2);
 
-        width: calc($control-icon-size / 1.5);
-        height: calc($control-icon-size / 1.5);
+        width: $control-icon-size;
+        height: $control-icon-size;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .slider {
+    .multi-carousel {
+      padding: 0;
+      &-inner {
+        justify-content: center;
+      }
+
+      &-control {
+        
+        &.prev {
+          left: -.5rem;
+        }
+        &.next {
+          right: -.5rem;
+        }
+
+        [class^="bi"] {
+          $control-icon-size: 2rem;
+          font-size: calc($control-icon-size / 2);
+
+          width: $control-icon-size;
+          height: $control-icon-size;
+        }
       }
     }
   }

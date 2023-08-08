@@ -89,4 +89,259 @@
       }
     }
   }
+  .caracter-main {
+    .container {
+      flex-flow: column;
+
+      .caracter {
+        width: 576px;
+        flex-flow: column;
+        text-align: center;
+        padding: 1.5rem 0;
+        gap: 1rem;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+        }
+
+        .desc {
+          font-size: 0.8rem;
+
+          span {
+            display: inline-block;
+          }
+          small {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .galeria {
+    .drag-gallery {
+      &-inner .drag-gallery-col .gallery-image img {
+        width: 400px;
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .icones {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem 4rem;
+      .icon {
+        img {
+          width: calc(50px + 5vw);
+        }
+      }
+    }
+  }
+
+  .foto-texto {
+    padding: 0 0 4rem;
+    .container {
+      max-width: 100% !important;
+      display: flex;
+      flex-flow: column;
+      gap: 3.5rem;
+      padding: 0;
+      img {
+        position: relative;
+        height: 200px;
+        width: 100%;
+        bottom: unset;
+        top: 0;
+      }
+      p {
+        width: 576px;
+        max-width: 100%;
+        height: 50%;
+        margin: auto;
+        padding: 0 1.25rem;
+        padding-top: 0;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .caracter-list {
+    ul {
+      font-size: 1.1rem;
+    }
+  }
+  .plantas-slider .carousel {
+    .carousel-inner {
+      padding: 0 3rem 2rem;
+    }
+    .carousel-control {
+      &-prev,
+      &-next {
+        &-icon {
+          $control-icon-size: 2.5rem;
+          font-size: calc($control-icon-size / 2);
+
+          width: $control-icon-size;
+          height: $control-icon-size;
+        }
+      }
+    }
+  }
+
+  .book {
+    // padding: 0;
+    padding: 0 0 4rem;
+    .container {
+      max-width: 100%;
+      display: flex;
+      flex-flow: column;
+      gap: 3.5rem;
+      padding: 0;
+      img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 250px;
+      }
+      .content {
+        height: 50%;
+        width: 100%;
+        padding: 0 1.25rem;
+        text-align: center;
+
+        h2 {
+          font-size: calc(2rem + 0.9vw);
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 3rem;
+        }
+
+        .btn {
+          font-size: 0.9rem;
+          padding: 0.625rem 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .hero {
+    padding: 6.5rem 0;
+    text-align: center;
+
+    &::after {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+
+    h1 {
+      width: auto;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    p {
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .caracter-main {
+    .container .caracter {
+      max-width: 100%;
+      gap: 1rem;
+
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .desc {
+        font-size: 0.7rem;
+
+        span {
+          display: inline-block;
+        }
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+  .caracter-list {
+    ul {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .caracter-list {
+    ul {
+      // column-count: 1;
+      font-size: 0.9rem;
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .contato-form {
+    .container {
+      padding: 0 0.75rem;
+      .wrapper {
+        padding: 3rem 1.5rem;
+      }
+    }
+  }
+  .plantas-slider .carousel {
+    .carousel-inner {
+      padding: 0 0 2rem;
+    }
+    .carousel-control {
+      &-prev,
+      &-next {
+        &-icon {
+          $control-icon-size: 2rem;
+          font-size: calc($control-icon-size / 2);
+
+          width: $control-icon-size;
+          height: $control-icon-size;
+        }
+      }
+    }
+  }
+
+  .book {
+    .container .content .btn {
+      display: inline-flex;
+      flex-flow: column-reverse;
+    }
+  }
+}
+
+@media all and (max-width: 375px) {
+  .hero {
+    padding: 6.5rem 0;
+    text-align: center;
+
+    &::after {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+
+    h1 {
+      font-size: calc(2rem + .9vw);
+      width: auto;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    p {
+      width: auto;
+      margin: auto;
+    }
+  }
 }

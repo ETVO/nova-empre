@@ -9,6 +9,17 @@
     transform: translateX(0);
   }
 }
+@keyframes dragging-reverse {
+  0% {
+    transform: translateX(1rem);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1rem);
+  }
+}
 
 @keyframes fadeOut {
   0% {
@@ -36,24 +47,33 @@
   .drag-instruction {
     display: none;
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%);
     z-index: 2;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     background: rgba(#000, 0.4);
     color: white;
     animation: fadeOut 3s forwards;
-
+    width: 100%;
+    
     .inner {
+      text-align: center;
       display: flex;
       align-items: center;
+      justify-content: center;
       font-size: 0.7rem;
+      margin: auto;
     }
     .icon {
       margin-left: 0.5rem;
       margin-right: 0.625rem;
       animation: dragging 1.5s infinite;
+    }
+    .icon-reverse {
+      margin-right: 0.5rem;
+      margin-left: 0.625rem;
+      animation: dragging-reverse 1.5s infinite;
     }
     .text {
       // font-style: italic;
@@ -82,6 +102,8 @@
           cursor: unset !important;
 
           img {
+            height: calc(200px + 5vw);
+            object-fit: cover;
             width: 33vw;
             pointer-events: none;
             -moz-user-select: none;

@@ -50,9 +50,22 @@ $('.gallery-has-modal .gallery-image').on('click', function () {
   const $imgSrc = $(this).find('img').attr('src');
   $('.gallery-modal img').attr('src', $imgSrc);
   $('.gallery-modal').fadeIn(200);
+
+  $(document).on('keydown', function (e) {
+    if (e.key == 'Escape') {
+      console.log(e.key);
+      closeGalleryModal();
+    }
+  });
 });
 
 // Close the modal when the close button or overlay is clicked
-$('.gallery-modal #overlay, .gallery-modal #close').on('click', function (e) {
-  $(this).closest('.gallery-modal').fadeOut(200);
-});
+$('.gallery-modal #overlay, .gallery-modal #close').on('click', closeGalleryModal);
+
+function closeGalleryModal() {
+  if($(this).lenght) {
+    $(this).closest('.gallery-modal').fadeOut(200);
+    return;
+  }
+  $('.gallery-modal').fadeOut(200);
+}

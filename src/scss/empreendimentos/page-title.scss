@@ -21,3 +21,13 @@
     }
   }
 }
+
+
+@media all and (max-width: 768px) {
+  .page-title {
+    padding: 4rem 0 1.25rem;
+    .title {
+      font-size: calc(2rem + 1.5vw);
+    }
+  }
+}

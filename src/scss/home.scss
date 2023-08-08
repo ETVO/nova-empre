@@ -54,8 +54,76 @@
 @media all and (max-width: 992px) {
   .pilares {
     ul li button {
-      font-size: calc(1.25rem + .1vw);
+      font-size: calc(1.25rem + 0.1vw);
       padding: 1.5rem 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hero-cta .carousel {
+    .carousel-control {
+      $control-icon-size: 2.5rem;
+      &-prev {
+        padding-right: 2rem;
+      }
+      &-next {
+        padding-left: 2rem;
+      }
+      &-prev,
+      &-next {
+        top: unset;
+        bottom: 0;
+        height: calc($control-icon-size * 3);
+
+        &-icon {
+          font-size: calc($control-icon-size / 2);
+
+          width: $control-icon-size;
+          height: $control-icon-size;
+        }
+      }
+    }
+  }
+  .pilares {
+    ul {
+      flex-flow: row;
+      flex-wrap: wrap;
+      li {
+        flex: 1;
+        width: auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .video-dep {
+    .media {
+      padding: 0;
+      display: flex;
+      iframe {
+        height: 324px;
+        width: 576px;
+        margin: auto;
+      }
+    }
+    .wrapper {
+      order: -1;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .hero-cta .carousel .carousel-item .content-wrap .content {
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  .pilares {
+    .tab-content .tab-pane .overlay {
+      padding: 4.5rem 1.25rem;
     }
   }
 }

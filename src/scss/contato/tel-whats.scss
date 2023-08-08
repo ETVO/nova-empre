@@ -23,24 +23,27 @@
 
     .contato {
       flex: 1;
+      font-size: 1rem;
       
       &:first-child {
         border-right: solid 2px var(--cinza);
         margin-right: 3.125rem;
         padding-right: 3.125rem;
       }
-
+      
       a:not(.btn) {
+
         text-decoration: none;
         color: var(--cinza-escuro);
-        display: flex; align-items: center;
+        display: inline-flex; align-items: center;
         gap: .6rem;
+        font-size: inherit;
         
         .icon {
-          font-size: 1rem;
+          font-size: 1em;
         }
         .text {
-          font-size: 1.5rem;
+          font-size: 1.5em;
           letter-spacing: 0.075rem;
         }
       }
@@ -52,6 +55,7 @@
         border: none;
         width: 100%;
         padding: .85rem 1.25rem;
+        font-size: inherit;
 
         display: flex; align-items: center; justify-content: center;
         gap: .6rem;
@@ -59,10 +63,10 @@
         transition: opacity .2s;
         
         .icon {
-          font-size: 1rem;
+          font-size: 1em;
         }
         .text {
-          font-size: 1rem;
+          font-size: 1em;
           font-weight: 700;
           text-transform: uppercase;
         }

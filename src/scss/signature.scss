@@ -18,9 +18,6 @@
   }
 
   .power-words {
-    .signature-title {
-      // margin-bottom: 3rem;
-    }
     .words {
       flex-flow: column;
       gap: 1.5rem;
@@ -28,6 +25,43 @@
       .divider {
         width: 4px;
         height: 4px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hero-signature .carousel {
+    .carousel-control {
+      $control-icon-size: 2.5rem;
+      &-prev {
+        padding-right: 2rem;
+      }
+      &-next {
+        padding-left: 2rem;
+      }
+      &-prev,
+      &-next {
+        top: unset;
+        bottom: 0;
+        height: calc($control-icon-size * 3);
+
+        &-icon {
+          font-size: calc($control-icon-size / 2);
+
+          width: $control-icon-size;
+          height: $control-icon-size;
+          background-color: var(--cinza-escuro);
+          color: white;
+        }
+      }
+    }
+  }
+  .bairros {
+    ul {
+      column-count: 2;
+      li {
+        font-size: 1rem;
       }
     }
   }

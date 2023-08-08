@@ -14,14 +14,10 @@
     margin: auto;
     padding: 1.1rem 0;
     .depoimento-item {
-      padding-bottom: 3rem;
-      margin-bottom: 3rem;
-      border-bottom: solid 1px #E6E7E8;
-
-      &:last-child {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: none;
+      &:not(:last-child) {
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+        border-bottom: solid 1px #e6e7e8;
       }
 
       p.depoimento {
@@ -31,7 +27,7 @@
         font-style: italic;
         font-weight: 700;
         margin-bottom: 0;
-        color: #A7A9AC;
+        color: #a7a9ac;
       }
     }
   }
