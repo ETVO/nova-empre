@@ -106,6 +106,9 @@ $control-icon-size: 3.75rem;
           width: calc(25px + 5vw);
         }
       }
+      @media all and (max-width: 576px) {
+        bottom: -2rem;
+      }
     }
   }
 }

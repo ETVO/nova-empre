@@ -66,3 +66,43 @@
     }
   }
 }
+
+@media all and (max-width: 576px) {
+  .slider {
+    padding: 5rem 0 6rem;
+    .signature-title {
+      margin-bottom: 3.5rem;
+    }
+  }
+  .bairros {
+    padding: 5rem 0 6.25rem;
+    .signature-title {
+      margin-bottom: 3rem;
+    }
+  }
+  .power-words {
+    padding: 5rem 0 6.25rem;
+    .signature-title {
+      margin-bottom: 3rem;
+    }
+  }
+  .hero-signature .carousel .carousel-item .content-wrap .content { 
+    font-size: calc(1.5rem + .9vw);
+  }
+}
+
+@media all and (max-width: 450px) {
+  .bairros {
+    ul {
+      column-count: 1;
+      text-align: center;
+      padding: 0;
+    }
+  }
+  .hero-signature .carousel .carousel-item .content-wrap .content h1 { 
+    letter-spacing: .2em;
+    .signature-font {
+      font-size: 2em;
+    }
+  }
+}

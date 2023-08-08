@@ -11,10 +11,17 @@
     &-control {
       [class^="bi"] {
         background: none;
+        @media all and (max-width: 576px) {
+          background: rgba(#000, .6);
+        }
       }
     }
     &-indicators {
       bottom: -4rem;
+      
+      @media all and (max-width: 576px) {
+        bottom: -3rem;
+      }
       button {
         height: 5px;
       }

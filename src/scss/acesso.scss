@@ -104,7 +104,7 @@
       width: auto;
     }
   }
-
+  
   .dashboard-menu {
     height: auto;
 
@@ -123,14 +123,33 @@
   .dashboard-content {
     padding: 3.125rem 0 7.5rem;
     .container {
-      // max-width: 100% !important;
       margin: auto;
     }
   }
-  
-  .dashboard-heading {
+}
+
+
+@media all and (max-width: 576px) {
+  .login {
+    padding: 5rem 0 6.5rem;
     .container {
-      // max-width: 100% !important; 
+      .heading h1 {
+        font-weight: 600;
+      }
+      form {
+        &::before {
+          inset: -.75rem;
+        }
+      }
+    }
+  }
+  .dashboard-heading {
+    &::after {
+      background: linear-gradient(90deg, rgba(#000, .7), rgba(#000, .3));
+    }
+    .container h1 {
+      font-size: calc(1.75rem + .9vw);
+      line-height: 1.5;
     }
   }
 }

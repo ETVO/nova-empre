@@ -20,11 +20,11 @@
   .container {
     position: relative;
     z-index: 1;
-    border-left: solid 3px #fff;
-    padding: 2rem 1.25rem 2rem 2.15rem;
   }
-
+  
   .inner {
+    padding: 2rem 1.25rem 2rem 2.15rem;
+    border-left: solid 3px #fff;
     position: relative;
     z-index: 1;
   }
@@ -36,6 +36,7 @@
     letter-spacing: 1rem;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+    max-width: 100%;
   }
 
   .title {
