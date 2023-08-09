@@ -32,7 +32,7 @@
       var $inner = $carousel.find('.multi-carousel-inner');
       var $indicators = $carousel.find('.multi-carousel-indicators');
       var cols = getCarouselCols($carousel, $(window).width());
-      
+
       $indicators.find('button:not(:first)').remove()
 
       $inner.find('.multi-carousel-item').each(function (i) {
@@ -53,23 +53,44 @@
       carouselIndicatorsUpdate($carousel);
     }
 
-    $('.multi-carousel-control.next').on('click', moveCarousel);
+    $('.multi-carousel-control.next').on('click', () => {
+      moveCarousel('next', $(this).parent('.multi-carousel'));
+    });
 
-    $('.multi-carousel-control.prev').on('click', moveCarousel);
+    $('.multi-carousel-control.prev').on('click', () => {
+      moveCarousel('prev', $(this).parent('.multi-carousel'));
+    });
+
+    var touchStartX = 0;
+    var touchEndX = 0;
+    var minSwipeDistance = 50; // Minimum distance required for swipe
+
+    $('.multi-carousel').on('touchstart', function (e) {
+      touchStartX = e.originalEvent.touches[0].clientX;
+    });
+
+    $('.multi-carousel').on('touchend', function (e) {
+      touchEndX = e.originalEvent.changedTouches[0].clientX;
+
+      var swipeDistance = touchEndX - touchStartX;
+
+      if (swipeDistance > minSwipeDistance) {
+        moveCarousel('prev', $(this));
+      } else if (swipeDistance < -minSwipeDistance) {
+        moveCarousel('next', $(this));
+      }
+    });
 
     const animateDelay = 600;
     var isAnimating = false;
 
-    function moveCarousel() {
-      if(isAnimating) return;
-      var direction = 'next';
-      if ($(this).hasClass('prev')) direction = 'prev';
+    function moveCarousel(direction, $carousel) {
+      if (isAnimating || !direction) return;
 
       const animateDirection = direction == 'prev'
         ? 'right'
         : 'left';
 
-      var $carousel = $(this).parent('.multi-carousel');
       var $inner = $carousel.find('.multi-carousel-inner');
       var cols = getCarouselCols($carousel, $(window).width());
 
@@ -95,7 +116,7 @@
         $inner.find('.multi-carousel-item.active').first().removeClass('transitioning');
         $inner.find('.multi-carousel-item.active').last().next().addClass('transitioning');
       }
-      
+
       let animateProps = {}
       animateProps[animateDirection] = '-' + 100 / cols + '%';
 
