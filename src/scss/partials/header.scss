@@ -113,6 +113,7 @@ header {
 		}
 
 		.navbar-toggler-expand {
+			display: none;
 			position: absolute;
 			z-index: -1;
 			bottom: -1.5rem;
@@ -192,6 +193,11 @@ header {
 			.expand-view {
 				display: none;
 			}
+
+			.navbar-toggler-expand {
+				display: block;
+			}
+
 			.navbar-nav {
 				margin-top: .5rem;
 				text-align: center;

@@ -1,13 +1,12 @@
 # Observações Website Nova
-### ETVO
-- ~~adicionar css e js separado por página~~
-- fazer correção para touch screen no drag gallery
 
 ### IMOBMARK
-- Número de whatsapp não parece ser válido - quando se clica no link ele não aparece o nome "Nova Empreendimentos"
-- Links para download do aplicativo (Apple Store e Google Play)
-- Favicon
-- O cabeçalho responde ao scroll da página, e diminui um pouco de tamanho para dar espaço ao conteúdo
+- Número de WhatsApp não parece ser válido - quando se clica no link ele não aparece o nome "Nova Empreendimentos"
+- Falta os links para download do aplicativo (Apple Store e Google Play)
+- Falta os links para redes sociais
+- Falta  favicon
+- Adicionei uma funcionalidade que não estava no protótipo, se vocês quiserem posso desfazer
+  - Cabeçalho responde ao scroll da página, e diminui um pouco de tamanho para dar espaço ao conteúdo
   
 ### IMPLEMENTAÇÃO
 - Na página **A Nova**, nas colunas de vídeos em "Modelo de Construção a Preço de Custo" 
