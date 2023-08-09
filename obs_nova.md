@@ -25,3 +25,10 @@
     </div>
   </div>
 ```
+- Defini uma classe auxiliar *`responsive-br`* para que o conteúdo seja mais responsivo
+  - `<br class="responsive-br xs">` - Exibida apenas em largura menor que **375px** 
+  - `<br class="responsive-br sm">` - Exibida apenas em largura menor que **576px** 
+  - `<br class="responsive-br md">` - Exibida apenas em largura menor que **768px**
+  - `<br class="responsive-br lg">` - Exibida apenas em largura menor que **992px**
+  - `<br class="responsive-br xl">` - Exibida apenas em largura menor que **1200px**
+  - `<br class="responsive-br xxl">` - Exibida apenas em largura menor que **1600px**

@@ -39,7 +39,7 @@
   }
 
   .pilares {
-    ul li button {
+    .pilar-button {
       padding: 1.5rem 3rem 1.5rem 1.5rem;
     }
   }
@@ -53,7 +53,7 @@
 
 @media all and (max-width: 992px) {
   .pilares {
-    ul li button {
+    .pilar-button {
       font-size: calc(1.25rem + 0.1vw);
       padding: 1.5rem 1rem;
     }
@@ -127,11 +127,24 @@
   }
 
   .pilares {
-    .tab-content .tab-pane .overlay {
+    .pilar-content .overlay {
       padding: 4.5rem 1.25rem;
       h2 {
         font-size: calc(1.5rem + 0.9vw);
       }
+    }
+  }
+}
+@media all and (max-width: 450px) {
+  .modelo .container .wrap .frame-col .frame {
+    font-size: calc(.7rem + 1vw);
+
+    .frame-main {
+      padding: 0 .75rem .75rem;
+    }
+
+    .frame-side {
+      font-size: .9em;
     }
   }
 }
@@ -150,7 +163,7 @@
   }
 
   .pilares {
-    .tab-content .tab-pane .overlay {
+    .pilar-content .overlay {
       padding: 4.5rem 1.25rem;
     }
   }

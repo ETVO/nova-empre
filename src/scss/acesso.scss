@@ -70,7 +70,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767.9px) {
   .login {
     .container {
       flex-flow: column;
@@ -104,7 +104,7 @@
       width: auto;
     }
   }
-  
+
   .dashboard-menu {
     height: auto;
 
@@ -128,7 +128,6 @@
   }
 }
 
-
 @media all and (max-width: 576px) {
   .login {
     padding: 5rem 0 6.5rem;
@@ -138,17 +137,17 @@
       }
       form {
         &::before {
-          inset: -.75rem;
+          inset: -0.75rem;
         }
       }
     }
   }
   .dashboard-heading {
     &::after {
-      background: linear-gradient(90deg, rgba(#000, .7), rgba(#000, .3));
+      background: linear-gradient(90deg, rgba(#000, 0.7), rgba(#000, 0.3));
     }
     .container h1 {
-      font-size: calc(1.75rem + .9vw);
+      font-size: calc(1.75rem + 0.9vw);
       line-height: 1.5;
     }
   }
@@ -162,7 +161,23 @@
           font-size: calc(1.5rem + 0.9vw);
         }
         p {
-          font-size: .9rem;
+          font-size: 0.9rem;
+        }
+      }
+      form {
+        padding: 1.75rem 1.25rem;
+        margin: 0 -.75rem;
+
+        &::before {
+          inset: -.5rem;
+        }
+        .submit-wrap {
+          // align-items: flex-end;
+          flex-flow: column-reverse;
+          .btn {
+            justify-content: center;
+            width: 100%;
+          }
         }
       }
     }

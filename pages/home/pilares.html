@@ -1,67 +1,168 @@
-
 <!-- Pilares -->
 <section class="pilares">
   <div class="row g-0 w-100 m-0">
     <!-- Nav tabs -->
     <ul class="col-12 col-md-4 col-xl-6 nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="transparencia-tab" data-bs-toggle="tab" data-bs-target="#transparencia"
-          type="button" role="tab" aria-controls="transparencia" aria-selected="true">Transparência</button>
+        <button class="nav-link pilar-button active" id="transparencia-tab" data-bs-toggle="tab"
+          data-bs-target="#transparencia" type="button" role="tab" aria-controls="transparencia"
+          aria-selected="true">Transparência</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="inovacao-tab" data-bs-toggle="tab" data-bs-target="#inovacao" type="button"
-          role="tab" aria-controls="inovacao" aria-selected="false">Inovação</button>
+        <button class="nav-link pilar-button" id="inovacao-tab" data-bs-toggle="tab" data-bs-target="#inovacao"
+          type="button" role="tab" aria-controls="inovacao" aria-selected="false">Inovação</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="dedicacao-tab" data-bs-toggle="tab" data-bs-target="#dedicacao" type="button"
-          role="tab" aria-controls="dedicacao" aria-selected="false">Dedicação</button>
+        <button class="nav-link pilar-button" id="dedicacao-tab" data-bs-toggle="tab" data-bs-target="#dedicacao"
+          type="button" role="tab" aria-controls="dedicacao" aria-selected="false">Dedicação</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="qualidade-tab" data-bs-toggle="tab" data-bs-target="#qualidade" type="button"
-          role="tab" aria-controls="qualidade" aria-selected="false">Qualidade</button>
+        <button class="nav-link pilar-button" id="qualidade-tab" data-bs-toggle="tab" data-bs-target="#qualidade"
+          type="button" role="tab" aria-controls="qualidade" aria-selected="false">Qualidade</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="iniciativa-tab" data-bs-toggle="tab" data-bs-target="#iniciativa" type="button"
-          role="tab" aria-controls="iniciativa" aria-selected="false">Iniciativa</button>
+        <button class="nav-link pilar-button" id="iniciativa-tab" data-bs-toggle="tab" data-bs-target="#iniciativa"
+          type="button" role="tab" aria-controls="iniciativa" aria-selected="false">Iniciativa</button>
       </li>
     </ul>
 
     <!-- Tab panes -->
     <div class="col-12 col-md-8 col-xl-6 tab-content">
-      <div class="tab-pane active" id="transparencia" role="tabpanel" aria-labelledby="transparencia-tab" tabindex="0">
+      <div class="tab-pane pilar-content active" id="transparencia" role="tabpanel" aria-labelledby="transparencia-tab"
+        tabindex="0">
         <div class="overlay">
           <h2>Transparência</h2>
           <p>Comunicação clara em todas as etapas do negócio. A transparência é o que fideliza nossos clientes.</p>
         </div>
         <img src="/assets/img/transparencia.jpg" alt="">
       </div>
-      <div class="tab-pane" id="inovacao" role="tabpanel" aria-labelledby="inovacao-tab" tabindex="0">
+      <div class="tab-pane pilar-content" id="inovacao" role="tabpanel" aria-labelledby="inovacao-tab" tabindex="0">
         <div class="overlay">
           <h2>Inovação</h2>
           <p>Buscamos a inovação constante como um diferencial de mercado.</p>
         </div>
         <img src="/assets/img/inovacao.jpg" alt="">
       </div>
-      <div class="tab-pane" id="dedicacao" role="tabpanel" aria-labelledby="dedicacao-tab" tabindex="0">
+      <div class="tab-pane pilar-content" id="dedicacao" role="tabpanel" aria-labelledby="dedicacao-tab" tabindex="0">
         <div class="overlay">
           <h2>Dedicação</h2>
           <p>Pessoas e equipes responsáveis e comprometidas com entregas e resultados.</p>
         </div>
         <img src="/assets/img/dedicacao.jpg" alt="">
       </div>
-      <div class="tab-pane" id="qualidade" role="tabpanel" aria-labelledby="qualidade-tab" tabindex="0">
+      <div class="tab-pane pilar-content" id="qualidade" role="tabpanel" aria-labelledby="qualidade-tab" tabindex="0">
         <div class="overlay">
           <h2>Qualidade</h2>
           <p>Somos comprometidos com a qualidade dos imóveis, com custo, prazo e satisfação dos clientes.</p>
         </div>
         <img src="/assets/img/qualidade.jpg" alt="">
       </div>
-      <div class="tab-pane" id="iniciativa" role="tabpanel" aria-labelledby="iniciativa-tab" tabindex="0">
+      <div class="tab-pane pilar-content" id="iniciativa" role="tabpanel" aria-labelledby="iniciativa-tab" tabindex="0">
         <div class="overlay">
           <h2>Iniciativa</h2>
           <p>Agilidade em resolver problemas e entregar as melhores soluções.</p>
         </div>
         <img src="/assets/img/iniciativa.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pilares mobile-version">
+
+  <div class="accordion accordion-flush" id="accordionPilares">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading1">
+        <button class="accordion-button pilar-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          Transparência
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+        data-bs-parent="#accordionPilares">
+        <div class="accordion-body pilar-content">
+          <div class="overlay">
+            <h2>Transparência</h2>
+            <p>Comunicação clara em todas as etapas do negócio. A transparência é o que fideliza nossos clientes.</p>
+          </div>
+          <img src="/assets/img/transparencia.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading2">
+        <button class="accordion-button pilar-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse2" aria-controls="collapse2">
+          Inovação
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+        data-bs-parent="#accordionPilares">
+        <div class="accordion-body pilar-content">
+          <div class="overlay">
+            <h2>Inovação</h2>
+            <p>Buscamos a inovação constante como um diferencial de mercado.</p>
+          </div>
+          <img src="/assets/img/inovacao.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button pilar-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse3" aria-controls="collapse3">
+          Dedicação
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+        data-bs-parent="#accordionPilares">
+        <div class="accordion-body pilar-content">
+          <div class="overlay">
+            <h2>Dedicação</h2>
+            <p>Pessoas e equipes responsáveis e comprometidas com entregas e resultados.</p>
+          </div>
+          <img src="/assets/img/dedicacao.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button pilar-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse4" aria-controls="collapse4">
+          Qualidade
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+        data-bs-parent="#accordionPilares">
+        <div class="accordion-body pilar-content">
+          <div class="overlay">
+            <h2>Qualidade</h2>
+            <p>Somos comprometidos com a qualidade dos imóveis, com custo, prazo e satisfação dos clientes.</p>
+          </div>
+          <img src="/assets/img/qualidade.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button pilar-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse5" aria-controls="collapse5">
+          Iniciativa
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+        data-bs-parent="#accordionPilares">
+        <div class="accordion-body pilar-content">
+          <div class="overlay">
+            <h2>Iniciativa</h2>
+            <p>Agilidade em resolver problemas e entregar as melhores soluções.</p>
+          </div>
+          <img src="/assets/img/iniciativa.jpg" alt="">
+        </div>
       </div>
     </div>
   </div>

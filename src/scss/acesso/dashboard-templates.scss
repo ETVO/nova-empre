@@ -6,9 +6,13 @@
     margin: 0;
     .dashboard-title {
       color: var(--cinza-escuro);
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: 3.125rem;
+
+      @media all and (max-width: 576px) {
+        font-size: calc(1.375rem + 1.5vw);
+      }
     }
   }
 }
@@ -26,8 +30,8 @@
 
     .icon img {
       display: block;
-      height: 2.5rem;
-      width: 2.5rem;
+      height: 2.5em;
+      width: 2.5em;
       object-fit: contain;
     }
 
@@ -40,10 +44,19 @@
       color: var(--cinza-escuro);
       margin-bottom: 0;
     }
+
+    @media all and (max-width: 576px) {
+      gap: 0.75rem;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+      .icon img {
+        height: 2em;
+        width: 2em;
+      }
+    }
   }
 
   .section-content {
-
     img {
       display: block;
       width: 100%;

@@ -9,5 +9,8 @@
     .block-title {
       color: var(--bs-primary);
     }
+    .empre-overlay .overlay {
+      transform: translateY(0);
+    }
   }
 }

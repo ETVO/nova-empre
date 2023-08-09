@@ -4,18 +4,21 @@
   .accordion {
     .accordion-item {
       border-bottom: solid 2px var(--cinza-claro);
+      font-size: 1rem;
       .accordion-header {
+        font-size: 1em;
         button {
           color: var(--bs-primary);
-          font-size: 1.35rem;
+          font-size: 1.35em;
           font-weight: 700;
+          gap: .5rem;
           &::after {
             background-image: none;
             font-family: "bootstrap-icons";
             content: "\F282";
-            font-size: 0.8rem;
-            width: 0.8rem;
-            height: 0.8rem;
+            font-size: 0.6em;
+            width: 0.6em;
+            height: 0.6em;
             -webkit-text-stroke: 1px;
             transform: rotate(90deg);
           }
@@ -33,6 +36,7 @@
         color: var(--cinza-escuro);
         font-weight: 500;
         line-height: 150%;
+        font-size: 1em;
 
         @media all and (min-width: 1200px) {
           max-width: 768px;

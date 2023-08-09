@@ -14,3 +14,10 @@
     }
   }
 }
+@media all and (max-width: 450px) {
+  .empre-destaque {
+    .empre-overlay .overlay img {
+      width: calc(75px + 0.5em);
+    }
+  }
+}

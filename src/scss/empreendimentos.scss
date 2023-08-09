@@ -30,7 +30,7 @@
   .empre-list-view {
     .empre {
       &::after {
-        background: linear-gradient(90deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0.2) 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
       }
 
       .container {
@@ -80,6 +80,15 @@
   .empre-list-view {
     .container {
       max-width: 576px;
+    }
+  }
+}
+
+@media all and (max-width: 375px) {
+  .page-title,
+  .empre-list-view {
+    .container {
+      padding: 0 .75rem;
     }
   }
 }

@@ -86,8 +86,8 @@
       margin-bottom: 3rem;
     }
   }
-  .hero-signature .carousel .carousel-item .content-wrap .content { 
-    font-size: calc(1.5rem + .9vw);
+  .hero-signature .carousel .carousel-item .content-wrap .content {
+    font-size: calc(1.5rem + 0.9vw);
   }
 }
 
@@ -99,10 +99,30 @@
       padding: 0;
     }
   }
-  .hero-signature .carousel .carousel-item .content-wrap .content h1 { 
-    letter-spacing: .2em;
+  .hero-signature .carousel .carousel-item .content-wrap .content h1 {
+    letter-spacing: 0.2em;
     .signature-font {
       font-size: 2em;
+    }
+  }
+}
+
+@media all and (max-width: 375px) {
+  .hero-signature .carousel .carousel-item .content-wrap {
+    padding: 0 0.5rem;
+    .content {
+      font-size: calc(1.75rem + 0.9vw);
+      h1 {
+        span {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  .slider {
+    .signature-title {
+      font-size: calc(1rem + 0.6vw);
     }
   }
 }
