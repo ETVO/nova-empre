@@ -41,6 +41,7 @@
           var newButton = $indicators.find('button').first().clone()
           newButton.attr('data-slide-to', (i + 1) - cols)
           newButton.removeClass('active')
+          // newButton.removeAttr('id')
           newButton.click(indicatorClick)
           $indicators.append(newButton)
         }
@@ -57,8 +58,10 @@
     $('.multi-carousel-control.prev').on('click', moveCarousel);
 
     const animateDelay = 600;
+    var isAnimating = false;
 
     function moveCarousel() {
+      if(isAnimating) return;
       var direction = 'next';
       if ($(this).hasClass('prev')) direction = 'prev';
 
@@ -82,6 +85,7 @@
         }
         carouselIndex++;
       }
+      isAnimating = true;
 
       if (direction == 'prev') {
         $inner.find('.multi-carousel-item.active').last().removeClass('transitioning');
@@ -113,6 +117,7 @@
           $inner.find('.multi-carousel-item.active').last().next().addClass('active');
           $inner.find('.multi-carousel-item.active').first().removeClass('active');
         }
+        isAnimating = false;
       }, animateDelay)
 
       carouselIndicatorsUpdate($carousel);

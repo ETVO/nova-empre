@@ -3,7 +3,8 @@ $control-icon-size: 3.75rem;
 .slider {
   padding: 4rem 0;
   background-color: #031d33;
-
+  overflow: hidden;
+  
   .multi-carousel {
     position: relative;
     padding: 0 5rem;
