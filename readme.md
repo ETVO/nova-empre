@@ -1,14 +1,5 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-  * { font-family: 'Roboto', sans-serif;}
-  h1, h2, h3,h4 { font-family: 'Lora', sans-serif;}
-</style>
-
 # Website Nova Empreendimentos
-<a href="https://etvo.me" style="font-family: 'Lora';font-weight:500; color:white;font-size:1.25rem;">Desenvolvido por etvo</a>
+<a href="https://etvo.me" style="color:white;">Desenvolvido por etvo</a>
 
 ## Estrutura do projeto
   
