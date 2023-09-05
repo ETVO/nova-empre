@@ -2,7 +2,7 @@
 <?php
 include 'partials/header.html';
 ?>
-<link rel="stylesheet" href="/assets/css/empreendimentos.css">
+<link rel="stylesheet" href="./assets/css/empreendimentos.css">
 <?php
 
 include "pages/empreendimentos/page-title.html";

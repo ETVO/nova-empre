@@ -2,7 +2,7 @@
 <?php
 include 'partials/header.html';
 ?>
-<link rel="stylesheet" href="/assets/css/contato.css">
+<link rel="stylesheet" href="./assets/css/contato.css">
 <?php
 
 include "pages/contato/hero.html";

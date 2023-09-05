@@ -15,4 +15,4 @@ include "pages/home/video-dep.html";
 
 include 'partials/footer.html';
 ?>
-<script src="/assets/js/multi-carousel.js"></script>
+<script src="./assets/js/multi-carousel.js"></script>
