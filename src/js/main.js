@@ -65,7 +65,8 @@ function closeGalleryModal() {
   $('.gallery-modal').fadeOut(200);
 }
 
-$('#closeCookies, #acceptCookies').on('click', () => {
+$('#closeCookies, #acceptCookies').on('click', function(e) {
+  e.preventDefault();
   var $cookiesConsent = $('#cookiesConsent');
   $cookiesConsent.fadeOut();
   localStorage.setItem('consents-to-cookies', 'Consented use of cookies');
