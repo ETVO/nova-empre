@@ -14,11 +14,6 @@ $(window).on('load scroll', function () {
   }
 });
 
-$(document).ready(function () {
-  // Apply the input mask to the telephone input field
-  $('#telefone').inputmask("(99) 9 9999-9999");
-});
-
 $('.link-on-click').on('click', function () {
   const link = $(this).find("a").attr("href");
   if (link) {
@@ -63,9 +58,24 @@ $('.gallery-has-modal .gallery-image').on('click', function () {
 $('.gallery-modal #overlay, .gallery-modal #close').on('click', closeGalleryModal);
 
 function closeGalleryModal() {
-  if($(this).lenght) {
+  if ($(this).lenght) {
     $(this).closest('.gallery-modal').fadeOut(200);
     return;
   }
   $('.gallery-modal').fadeOut(200);
 }
+
+$('#closeCookies, #acceptCookies').on('click', () => {
+  var $cookiesConsent = $('#cookiesConsent');
+  $cookiesConsent.fadeOut();
+  localStorage.setItem('consents-to-cookies', 'Consented use of cookies');
+});
+
+$(document).ready(function () {
+  // Apply the input mask to the telephone input field
+  $('#telefone').inputmask("(99) 9 9999-9999");
+  
+  if (localStorage.getItem('consents-to-cookies') !== 'Consented use of cookies') {
+    $('#cookiesConsent').show();
+  }
+});

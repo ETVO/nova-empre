@@ -3,54 +3,174 @@ $control-icon-size: 3.75rem;
 .hero-cta {
     .carousel {
         .carousel-item {
+            // position: relative;
+
+            // img {
+            //     display: block;
+            //     width: 100%;
+            //     min-height: 80vh;
+            //     object-fit: cover;
+            // }
+            // .content-wrap {
+            //     position: absolute;
+            //     inset: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     display: flex;
+
+            //     .content {
+            //         margin: auto;
+            //         padding: 2rem;
+            //         background-color: rgba(#000, 0.6);
+            //         color: white;
+            //         text-transform: uppercase;
+            //         text-align: center;
+
+            //         width: 500px;
+            //         max-width: 100%;
+
+            //         .title {
+            //             color: inherit;
+            //             font-size: calc(1.5rem + 1.5vw);
+            //             font-weight: 500;
+            //             letter-spacing: 10.4px;
+            //             margin-bottom: 2rem;
+            //         }
+
+            //         .local {
+            //             color: inherit;
+            //             font-family: Montserrat;
+            //             font-size: calc(0.9rem + 0.4vw);
+            //             font-weight: 500;
+            //             line-height: 150%;
+            //             letter-spacing: 7.2px;
+            //             margin-bottom: 3rem;
+            //         }
+
+            //         .action {
+            //             .btn {
+            //                 padding: 0.75rem 3rem;
+            //             }
+            //         }
+            //     }
+            // }
+
             position: relative;
+            padding: 6.9375rem 0;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+
+            cursor: pointer;
 
             img {
-                display: block;
-                width: 100%;
-                min-height: 80vh;
-                object-fit: cover;
-            }
-            .content-wrap {
+                content: "";
                 position: absolute;
                 inset: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+
+                transition: transform 0.2s;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.025);
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%),
+                    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+            }
+
+            .container {
+                position: relative;
+                z-index: 1;
+
+                @media all and (min-width: 1200px) {
+                    max-width: 1000px;
+                }
+                @media all and (min-width: 1400px) {
+                    max-width: 1220px;
+                }
+
                 display: flex;
+                justify-content: space-between;
 
-                .content {
-                    margin: auto;
-                    padding: 2rem;
-                    background-color: rgba(#000, 0.6);
-                    color: white;
-                    text-transform: uppercase;
-                    text-align: center;
+                .heading {
+                    padding: 1.25rem 0 1.25rem 1.875rem;
 
-                    width: 500px;
-                    max-width: 100%;
-
-                    .title {
-                        color: inherit;
-                        font-size: calc(1.5rem + 1.5vw);
-                        font-weight: 500;
-                        letter-spacing: 10.4px;
-                        margin-bottom: 2rem;
+                    .inner {
+                        position: relative;
+                        z-index: 1;
                     }
 
-                    .local {
-                        color: inherit;
-                        font-family: Montserrat;
-                        font-size: calc(0.9rem + 0.4vw);
+                    h2 {
+                        word-wrap: break-word;
+                        color: #fff;
+                        font-size: 3rem;
                         font-weight: 500;
-                        line-height: 150%;
-                        letter-spacing: 7.2px;
-                        margin-bottom: 3rem;
-                    }
+                        line-height: 1.2;
+                        letter-spacing: 0.3rem;
+                        text-transform: uppercase;
+                        margin-bottom: 1.875rem;
 
-                    .action {
-                        .btn {
-                            padding: 0.75rem 3rem;
+                        @media all and (min-width: 1200px) {
+                            width: 576px;
                         }
+                        max-width: 100%;
+                    }
+
+                    p {
+                        color: #fff;
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        line-height: 1.5;
+
+                        width: 385px;
+                        max-width: 100%;
+                    }
+                }
+
+                .info {
+                    background: rgba(white, 0.75);
+                    border-right: 5px solid var(--bs-primary);
+                    padding: 1.875rem;
+                    height: auto;
+                    align-self: center;
+                    text-align: right;
+
+                    p {
+                        color: var(--bs-primary);
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        line-height: 120%;
+                        text-transform: uppercase;
+
+                        &.highlight {
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                        }
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .action {
+                    margin-top: 2rem;
+                    .btn {
+                        text-transform: uppercase;
+                        padding: 0.5rem 2rem;
                     }
                 }
             }

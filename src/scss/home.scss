@@ -58,10 +58,73 @@
       padding: 1.5rem 1rem;
     }
   }
+
+  .hero-cta {
+    .carousel .carousel-item {
+      .container {
+        .heading h2 {
+          font-size: calc(2rem + 0.9vw);
+        }
+        .info p {
+          font-size: .9rem;
+          &.highlight {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 768px) {
   .hero-cta .carousel {
+    .carousel-item {
+      padding: 4rem 0 6rem;
+      &::after {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+      }
+
+      .container {
+        flex-flow: column;
+        align-items: stretch;
+        .heading {
+          margin-bottom: 2rem;
+          text-align: center;
+
+          border-left: none;
+          border-bottom: solid 3px #fff;
+
+          padding: 0 0 2rem 0;
+
+          h2 {
+            margin: auto;
+            margin-bottom: 1rem;
+            width: auto;
+            font-size: calc(1.75rem + .9vw);
+          }
+          p {
+            margin: auto;
+            font-size: 1rem;
+          }
+        }
+        .info {
+          width: 100%;
+          text-align: center;
+          border-right: none;
+          border-bottom: 5px solid var(--bs-primary);
+
+          p {
+            font-size: 0.85rem;
+
+            &.highlight {
+              display: block;
+              width: 100%;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
     .carousel-control {
       $control-icon-size: 2.5rem;
       &-prev {
@@ -137,14 +200,14 @@
 }
 @media all and (max-width: 450px) {
   .modelo .container .wrap .frame-col .frame {
-    font-size: calc(.7rem + 1vw);
+    font-size: calc(0.7rem + 1vw);
 
     .frame-main {
-      padding: 0 .75rem .75rem;
+      padding: 0 0.75rem 0.75rem;
     }
 
     .frame-side {
-      font-size: .9em;
+      font-size: 0.9em;
     }
   }
 }
